@@ -136,8 +136,8 @@
       text: 'WIFI:T:WPA;S:Wind3 Hub-406D51;P:880bmgx8d78cjuip;;',
       width: 340,
       height: 340,
-      colorDark: dark ? '#f5f5f5' : '#1a1a1a',
-      colorLight: dark ? '#161616' : '#ffffff',
+      colorDark: dark ? '#f1ead9' : '#201b15',
+      colorLight: dark ? '#1f1a12' : '#ffffff',
       correctLevel: window.QRCode.CorrectLevel.M
     });
   }

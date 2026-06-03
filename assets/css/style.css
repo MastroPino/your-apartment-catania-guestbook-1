@@ -1,7 +1,7 @@
 /* ===================================================================
    Your Apartment Catania — Guest Book
-   Titles: Playfair Display (serif) · Accents: Caveat (script)
-   Body: Poppins (sans) · Palette: paper white + ink + Etna red
+   Titles: Playfair Display (serif) · Accents: Sacramento (script)
+   Body: Poppins (sans) · Palette: warm off-white + ink + cream
    =================================================================== */
 
 :root {
@@ -17,19 +17,19 @@
     --font-body:
         "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui,
         sans-serif;
-    --font-accent: "Caveat", "Segoe Script", cursive;
+    --font-accent: "Sacramento", "Segoe Script", cursive;
 
     /* --- Brand palette ----------------------------------------------- */
-    --brand-primary: #d62828; /* CTAs, banners, medal, host badge */
-    --brand-on-primary: #ffffff; /* readable fg on --brand-primary    */
-    --brand-footer-bg: #0a0a0a; /* always-dark strip at page bottom  */
+    --brand-primary: #201b15; /* CTAs, banners, medal, host badge */
+    --brand-on-primary: #fdfbf7; /* readable fg on --brand-primary    */
+    --brand-footer-bg: #15110b; /* always-dark strip at page bottom  */
 
     /* --- Surface palette --------------------------------------------- */
-    --paper: #fafafa; /* page background                   */
-    --ink: #1a1a1a; /* primary text                      */
-    --ink-soft: #595959; /* secondary text                    */
-    --muted: #9a9a9a; /* tertiary text, labels             */
-    --cream: #f1f1f1; /* card / panel background           */
+    --paper: #fdfbf7; /* page background                   */
+    --ink: #201b15; /* primary text                      */
+    --ink-soft: #5d554a; /* secondary text                    */
+    --muted: #a39a8a; /* tertiary text, labels             */
+    --cream: #f2eae0; /* card / panel background           */
 
     /* --- Corner radii ------------------------------------------------ */
     --radius-sm: 12px; /* accordion, small buttons          */
@@ -52,10 +52,10 @@
     --radius: var(--radius-lg);
 
     /* Internal surface tones */
-    --bg: #e8e8e8; /* page backdrop on wide screens     */
-    --cream-2: #ebebeb;
-    --line: #ececec;
-    --line-2: #dcdcdc;
+    --bg: #e7ded0; /* page backdrop on wide screens     */
+    --cream-2: #ece2d4;
+    --line: #ece4d7;
+    --line-2: #e2d8c8;
     --white: #ffffff; /* elevated white surface            */
 
     /* Layout */
@@ -69,21 +69,21 @@
 /* ===== Dark mode tokens (translucent topbar/sec-nav rules at end) ===== */
 @media (prefers-color-scheme: dark) {
     :root {
-        /* brand stays red — pops on dark surfaces too */
-        --brand-primary: #ff4d4d;
-        --brand-on-primary: #ffffff;
+        /* brand inverts: a warm cream becomes the accent, dark becomes fg */
+        --brand-primary: #f1ead9;
+        --brand-on-primary: #15110b;
 
         /* surfaces */
-        --paper: #0e0e0e;
-        --bg: #050505;
-        --ink: #f5f5f5;
-        --ink-soft: #b8b8b8;
-        --muted: #7a7a7a;
-        --cream: #181818;
-        --cream-2: #1f1f1f;
-        --line: #262626;
-        --line-2: #333333;
-        --white: #161616;
+        --paper: #15110b;
+        --bg: #0a0805;
+        --ink: #f1ead9;
+        --ink-soft: #c5b9a1;
+        --muted: #807665;
+        --cream: #1d1810;
+        --cream-2: #271f15;
+        --line: #2c2418;
+        --line-2: #3a3022;
+        --white: #1f1a12;
     }
 }
 
@@ -1230,7 +1230,7 @@ em {
     font-weight: 600;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--brand-on-primary);
+    color: #f1ead9;
 }
 .tcard-host-badge img {
     width: 26px;
@@ -1670,7 +1670,7 @@ em {
     body {
         background: radial-gradient(
             140% 120% at 50% 0%,
-            #f5f5f5 0%,
+            #efe7d9 0%,
             var(--bg) 70%
         );
     }
@@ -1710,17 +1710,17 @@ em {
    so they win the cascade against the base .topbar / .sec-nav / body rules) ===== */
 @media (prefers-color-scheme: dark) {
     .topbar {
-        background: rgba(14, 14, 14, 0.78);
+        background: rgba(21, 17, 11, 0.78);
     }
     .sec-nav {
-        background: rgba(14, 14, 14, 0.88);
+        background: rgba(21, 17, 11, 0.88);
     }
 }
 @media (prefers-color-scheme: dark) and (min-width: 540px) {
     body {
         background: radial-gradient(
             140% 120% at 50% 0%,
-            #1a1a1a 0%,
+            #1a1610 0%,
             var(--bg) 70%
         );
     }

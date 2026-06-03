@@ -4,14 +4,15 @@ A small, mobile-first website that gives guests of *Your Apartment Catania* an
 app-like guidebook: a home screen with an icon menu, and a separate screen for
 each section (check-in, Wi-Fi, house info, things to do, …).
 
-Re-skinned from the sibling Malta guidebook — same architecture, Catania
-content and brand tokens.
+Cloned 1:1 from the sibling Malta guidebook — same architecture, same chrome
+(palette, fonts, components); only the logo, the photos and the textual
+content change for Catania.
 
-**Style**
+**Style** (identical to Malta)
 - **Titles** → *Playfair Display* (serif)
-- **Accents / signature** → *Caveat* (script — e.g. "Enjoy your stay!")
+- **Accents / signature** → *Sacramento* (script — e.g. "Enjoy your stay!")
 - **Body & labels** → *Poppins* (sans-serif)
-- Paper-white background, near-black ink, Etna-red accents, dark brand footer.
+- Warm off-white background, near-black ink, cream panels, delicate line-art icons.
 
 ---
 
