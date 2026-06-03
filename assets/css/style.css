@@ -398,8 +398,8 @@ em {
     min-height: 220px;
     /* Breathing room before "Enjoy your stay" — scales with viewport height
        so it stays generous on tall phones / tablets and never collapses
-       below ~48px on shorter screens. */
-    margin-bottom: clamp(48px, 8dvh, 96px);
+       on shorter screens. */
+    margin-bottom: clamp(72px, 12dvh, 140px);
 }
 .collage img {
     width: 100%;
@@ -416,7 +416,7 @@ em {
 
 .hero-tagline {
     font-size: clamp(2.1rem, 9.5vw, 2.7rem);
-    margin-top: 4px;
+    margin-top: clamp(12px, 2dvh, 28px);
 }
 .hero-address {
     display: inline-flex;
