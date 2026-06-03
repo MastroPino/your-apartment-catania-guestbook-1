@@ -1,0 +1,8 @@
+# macOS
+.DS_Store
+
+# Claude Code / local preview tooling (not part of the website)
+.claude/
+
+# Raw originals from the host (kept locally, optimized copies live in assets/img/)
+assets/img/from-host/
