@@ -170,6 +170,57 @@
     s.appendChild(bf);
   });
 
+  /* ---- Photo gallery (modal opened from the home collage) ---- */
+  var gallery = document.getElementById('gallery');
+  if (gallery && typeof gallery.showModal === 'function') {
+    var gList = gallery.querySelector('.gallery-list');
+    var gCounter = gallery.querySelector('.gallery-counter');
+    var gClose = gallery.querySelector('.gallery-close');
+    var gItems = gallery.querySelectorAll('.gallery-item');
+    var gTotal = gItems.length;
+    var spyScheduled = false;
+
+    function gUpdateCounter() {
+      var line = gList.scrollTop + gList.clientHeight * 0.4;
+      var current = 0;
+      for (var i = 0; i < gItems.length; i++) {
+        if (gItems[i].offsetTop <= line) { current = i; }
+      }
+      gCounter.textContent = (current + 1) + ' / ' + gTotal;
+    }
+    function gSpy() {
+      if (spyScheduled) { return; }
+      spyScheduled = true;
+      requestAnimationFrame(function () { spyScheduled = false; gUpdateCounter(); });
+    }
+    function gOpen() {
+      gallery.showModal();
+      gList.scrollTop = 0;
+      gUpdateCounter();
+      document.documentElement.style.overflow = 'hidden';
+    }
+    function gCloseModal() {
+      if (gallery.open) { gallery.close(); }
+      document.documentElement.style.overflow = '';
+    }
+
+    document.addEventListener('click', function (e) {
+      var trigger = e.target.closest ? e.target.closest('[data-gallery-open]') : null;
+      if (!trigger) { return; }
+      e.preventDefault();
+      gOpen();
+    });
+    if (gClose) { gClose.addEventListener('click', gCloseModal); }
+    // Click outside the modal frame (on the ::backdrop) closes too
+    gallery.addEventListener('click', function (e) {
+      if (e.target === gallery) { gCloseModal(); }
+    });
+    gallery.addEventListener('close', function () {
+      document.documentElement.style.overflow = '';
+    });
+    if (gList) { gList.addEventListener('scroll', gSpy, { passive: true }); }
+  }
+
   /* ---- Boot ---- */
   render();
   window.scrollTo(0, 0);

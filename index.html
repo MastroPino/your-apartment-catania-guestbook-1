@@ -78,7 +78,7 @@
             href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Poppins:wght@300;400;500;600&family=Sacramento&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="assets/css/style.css?v=28" />
+        <link rel="stylesheet" href="assets/css/style.css?v=29" />
     </head>
     <body>
         <!-- ============ SVG ICON SPRITE ============ -->
@@ -394,6 +394,16 @@
                 <symbol id="i-chevron" viewBox="0 0 24 24">
                     <path d="M9 6l6 6-6 6" />
                 </symbol>
+                <symbol id="i-grid" viewBox="0 0 24 24">
+                    <rect x="3.5" y="3.5" width="7" height="7" rx="1.4" />
+                    <rect x="13.5" y="3.5" width="7" height="7" rx="1.4" />
+                    <rect x="3.5" y="13.5" width="7" height="7" rx="1.4" />
+                    <rect x="13.5" y="13.5" width="7" height="7" rx="1.4" />
+                </symbol>
+                <symbol id="i-x" viewBox="0 0 24 24">
+                    <path d="M6 6l12 12" />
+                    <path d="M18 6L6 18" />
+                </symbol>
             </defs>
         </svg>
 
@@ -416,7 +426,12 @@
                             />
                         </picture>
                     </h1>
-                    <div class="collage">
+                    <button
+                        type="button"
+                        class="collage"
+                        data-gallery-open
+                        aria-label="Open the photo gallery (9 photos)"
+                    >
                         <img
                             class="tall"
                             src="assets/img/apt-terrace.jpg"
@@ -436,7 +451,11 @@
                             height="1230"
                             alt="Modern kitchen with the signature red fridge"
                         />
-                    </div>
+                        <span class="collage-badge">
+                            <svg class="ico"><use href="#i-grid" /></svg> Show
+                            all 9 photos
+                        </span>
+                    </button>
                     <p class="hero-tagline script">Enjoy your stay!</p>
                     <a
                         class="hero-address"
@@ -2350,7 +2369,127 @@
             </section>
         </div>
 
+        <!-- Photo gallery (opened from the home collage) -->
+        <dialog
+            id="gallery"
+            class="gallery-modal"
+            aria-label="Apartment photo gallery"
+        >
+            <header class="gallery-bar">
+                <button
+                    type="button"
+                    class="gallery-close"
+                    aria-label="Close gallery"
+                >
+                    <svg class="ico"><use href="#i-x" /></svg>
+                </button>
+                <span class="gallery-counter">1 / 9</span>
+                <span class="gallery-spacer"></span>
+            </header>
+            <div class="gallery-list">
+                <picture class="gallery-item">
+                    <source
+                        type="image/webp"
+                        srcset="assets/img/gallery/apt-01.webp"
+                    />
+                    <img
+                        src="assets/img/gallery/apt-01.jpg"
+                        alt="Apartment photo 1 of 9"
+                        loading="lazy"
+                    />
+                </picture>
+                <picture class="gallery-item">
+                    <source
+                        type="image/webp"
+                        srcset="assets/img/gallery/apt-02.webp"
+                    />
+                    <img
+                        src="assets/img/gallery/apt-02.jpg"
+                        alt="Apartment photo 2 of 9"
+                        loading="lazy"
+                    />
+                </picture>
+                <picture class="gallery-item">
+                    <source
+                        type="image/webp"
+                        srcset="assets/img/gallery/apt-03.webp"
+                    />
+                    <img
+                        src="assets/img/gallery/apt-03.jpg"
+                        alt="Apartment photo 3 of 9"
+                        loading="lazy"
+                    />
+                </picture>
+                <picture class="gallery-item">
+                    <source
+                        type="image/webp"
+                        srcset="assets/img/gallery/apt-04.webp"
+                    />
+                    <img
+                        src="assets/img/gallery/apt-04.jpg"
+                        alt="Apartment photo 4 of 9"
+                        loading="lazy"
+                    />
+                </picture>
+                <picture class="gallery-item">
+                    <source
+                        type="image/webp"
+                        srcset="assets/img/gallery/apt-05.webp"
+                    />
+                    <img
+                        src="assets/img/gallery/apt-05.jpg"
+                        alt="Apartment photo 5 of 9"
+                        loading="lazy"
+                    />
+                </picture>
+                <picture class="gallery-item">
+                    <source
+                        type="image/webp"
+                        srcset="assets/img/gallery/apt-06.webp"
+                    />
+                    <img
+                        src="assets/img/gallery/apt-06.jpg"
+                        alt="Apartment photo 6 of 9"
+                        loading="lazy"
+                    />
+                </picture>
+                <picture class="gallery-item">
+                    <source
+                        type="image/webp"
+                        srcset="assets/img/gallery/apt-07.webp"
+                    />
+                    <img
+                        src="assets/img/gallery/apt-07.jpg"
+                        alt="Apartment photo 7 of 9"
+                        loading="lazy"
+                    />
+                </picture>
+                <picture class="gallery-item">
+                    <source
+                        type="image/webp"
+                        srcset="assets/img/gallery/apt-08.webp"
+                    />
+                    <img
+                        src="assets/img/gallery/apt-08.jpg"
+                        alt="Apartment photo 8 of 9"
+                        loading="lazy"
+                    />
+                </picture>
+                <picture class="gallery-item">
+                    <source
+                        type="image/webp"
+                        srcset="assets/img/gallery/apt-09.webp"
+                    />
+                    <img
+                        src="assets/img/gallery/apt-09.jpg"
+                        alt="Apartment photo 9 of 9"
+                        loading="lazy"
+                    />
+                </picture>
+            </div>
+        </dialog>
+
         <script src="assets/js/qrcode.min.js"></script>
-        <script src="assets/js/app.js?v=21"></script>
+        <script src="assets/js/app.js?v=22"></script>
     </body>
 </html>
