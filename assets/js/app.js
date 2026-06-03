@@ -46,8 +46,8 @@
     // topbar state is always applied (even when the screen doesn't change)
     topbar.style.display = isHome ? 'none' : 'flex';
     if (!isHome) { tbTitle.textContent = next.getAttribute('data-title') || ''; }
-    document.title = (isHome ? 'Your Apartment Catania · Guest Book'
-                             : (next.getAttribute('data-title') + ' · Your Apartment Catania'));
+    document.title = (isHome ? 'Your Apartment Catania Apt 1 · Guest Book'
+                             : (next.getAttribute('data-title') + ' · Your Apartment Catania Apt 1'));
 
     var active = document.querySelector('.screen.is-active');
     if (active === next) { return; }          // already showing

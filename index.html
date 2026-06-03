@@ -1,675 +1,2356 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#fdfbf7" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#15110b" media="(prefers-color-scheme: dark)">
-<title>Your Apartment Catania · Guest Book</title>
-<meta name="description" content="Your digital guest book for Your Apartment Catania — check-in, Wi-Fi, house info, local tips and everything you need for a perfect stay in Catania.">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, viewport-fit=cover"
+        />
+        <meta
+            name="theme-color"
+            content="#fdfbf7"
+            media="(prefers-color-scheme: light)"
+        />
+        <meta
+            name="theme-color"
+            content="#15110b"
+            media="(prefers-color-scheme: dark)"
+        />
+        <title>Your Apartment Catania Apt 1 · Guest Book</title>
+        <meta
+            name="description"
+            content="Your digital guest book for Your Apartment Catania — check-in, Wi-Fi, house info, local tips and everything you need for a perfect stay in Catania."
+        />
 
-<!-- Open Graph / Twitter (controls the preview when the link is shared) -->
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Your Apartment Catania">
-<meta property="og:title" content="Your Apartment Catania · Guest Book">
-<meta property="og:description" content="The digital guest book for Your Apartment Catania — check-in, Wi-Fi, local tips and everything for a perfect stay in Catania.">
-<meta property="og:url" content="https://mastropino.github.io/your-apartment-catania-guestbook-1/">
-<meta property="og:image" content="https://mastropino.github.io/your-apartment-catania-guestbook-1/assets/img/og-image.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="1200">
-<meta property="og:image:alt" content="Your Apartment Catania — brand logo on a dark background">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Your Apartment Catania · Guest Book">
-<meta name="twitter:description" content="The digital guest book for Your Apartment Catania.">
-<meta name="twitter:image" content="https://mastropino.github.io/your-apartment-catania-guestbook-1/assets/img/og-image.png">
+        <!-- Open Graph / Twitter (controls the preview when the link is shared) -->
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Your Apartment Catania Apt 1" />
+        <meta
+            property="og:title"
+            content="Your Apartment Catania Apt 1 · Guest Book"
+        />
+        <meta
+            property="og:description"
+            content="The digital guest book for Your Apartment Catania Apt 1 — check-in, Wi-Fi, local tips and everything for a perfect stay in Catania."
+        />
+        <meta
+            property="og:url"
+            content="https://mastropino.github.io/your-apartment-catania-guestbook-1/"
+        />
+        <meta
+            property="og:image"
+            content="https://mastropino.github.io/your-apartment-catania-guestbook-1/assets/img/og-image.png"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="1200" />
+        <meta
+            property="og:image:alt"
+            content="Your Apartment Catania — brand logo on a dark background"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="Your Apartment Catania Apt 1 · Guest Book"
+        />
+        <meta
+            name="twitter:description"
+            content="The digital guest book for Your Apartment Catania Apt 1."
+        />
+        <meta
+            name="twitter:image"
+            content="https://mastropino.github.io/your-apartment-catania-guestbook-1/assets/img/og-image.png"
+        />
 
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="apple-mobile-web-app-title" content="Your Apartment">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231f1b16'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='20' fill='%23fbf9f6' text-anchor='middle'%3EY%3C/text%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Poppins:wght@300;400;500;600&family=Sacramento&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=27">
-</head>
-<body>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta
+            name="apple-mobile-web-app-title"
+            content="Catania Apt 1"
+        />
+        <link
+            rel="icon"
+            href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231f1b16'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='20' fill='%23fbf9f6' text-anchor='middle'%3EY%3C/text%3E%3C/svg%3E"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Poppins:wght@300;400;500;600&family=Sacramento&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="assets/css/style.css?v=28" />
+    </head>
+    <body>
+        <!-- ============ SVG ICON SPRITE ============ -->
+        <svg
+            width="0"
+            height="0"
+            style="position: absolute"
+            aria-hidden="true"
+            focusable="false"
+        >
+            <defs>
+                <symbol id="i-arrow-left" viewBox="0 0 24 24">
+                    <path d="M19 12H5" />
+                    <path d="M11 18l-6-6 6-6" />
+                </symbol>
+                <symbol id="i-key" viewBox="0 0 24 24">
+                    <circle cx="8" cy="8" r="4.2" />
+                    <path d="M11 11l8.5 8.5" />
+                    <path d="M17 17.5l2-2" />
+                    <path d="M14.2 14.7l1.8 1.8" />
+                </symbol>
+                <symbol id="i-arrive" viewBox="0 0 24 24">
+                    <path d="M13 3h5a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1h-5" />
+                    <path d="M9.5 8l4 4-4 4" />
+                    <path d="M3.5 12h10" />
+                </symbol>
+                <symbol id="i-depart" viewBox="0 0 24 24">
+                    <path d="M11 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h5" />
+                    <path d="M16 8l4 4-4 4" />
+                    <path d="M10 12h10" />
+                </symbol>
+                <symbol id="i-wifi" viewBox="0 0 24 24">
+                    <path d="M4.5 10.2a11 11 0 0 1 15 0" />
+                    <path d="M7.6 13.4a6.6 6.6 0 0 1 8.8 0" />
+                    <path d="M10.4 16.5a2.6 2.6 0 0 1 3.2 0" />
+                    <circle
+                        cx="12"
+                        cy="19.2"
+                        r=".9"
+                        fill="currentColor"
+                        stroke="none"
+                    />
+                </symbol>
+                <symbol id="i-house" viewBox="0 0 24 24">
+                    <path d="M4 11.2 12 5l8 6.2" />
+                    <path d="M6 10v9.5h12V10" />
+                    <path d="M10.2 19.5V14h3.6v5.5" />
+                </symbol>
+                <symbol id="i-plate" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="8.4" />
+                    <circle cx="12" cy="12" r="4" />
+                </symbol>
+                <symbol id="i-rules" viewBox="0 0 24 24">
+                    <rect x="5.5" y="3" width="13" height="18" rx="2" />
+                    <path d="M9 8h6" />
+                    <path d="M9 12h6" />
+                    <path d="M9 16h4" />
+                </symbol>
+                <symbol id="i-aid" viewBox="0 0 24 24">
+                    <rect x="3" y="7" width="18" height="13" rx="2.4" />
+                    <path
+                        d="M9 7V5.4A1.4 1.4 0 0 1 10.4 4h3.2A1.4 1.4 0 0 1 15 5.4V7"
+                    />
+                    <path d="M12 11v5" />
+                    <path d="M9.5 13.5h5" />
+                </symbol>
+                <symbol id="i-flame" viewBox="0 0 24 24">
+                    <path
+                        d="M12 3c.8 2.5 2.4 3.7 3.7 5.2A6.2 6.2 0 0 1 17.5 13a5.5 5.5 0 0 1-11 0c0-1.6.6-2.8 1.4-3.8.3 1 1 1.8 1.9 2.1C9.4 8.6 10.6 6.2 12 3z"
+                    />
+                    <path
+                        d="M12 20.5a2.6 2.6 0 0 0 2.6-2.6c0-1.4-1.3-2.2-2.6-3.4-1.3 1.2-2.6 2-2.6 3.4A2.6 2.6 0 0 0 12 20.5z"
+                    />
+                </symbol>
+                <symbol id="i-shield" viewBox="0 0 24 24">
+                    <path
+                        d="M12 3.2l7 2.4v5.1c0 4.4-3 7.9-7 9.3-4-1.4-7-4.9-7-9.3V5.6z"
+                    />
+                    <path d="M9 11.6l2.1 2.1L15 9.8" />
+                </symbol>
+                <symbol id="i-bus" viewBox="0 0 24 24">
+                    <rect x="5" y="3.5" width="14" height="14" rx="2.4" />
+                    <path d="M5 11h14" />
+                    <path d="M8.5 3.5v7.5" />
+                    <path d="M15.5 3.5v7.5" />
+                    <path d="M8 20.5l-1 .8" />
+                    <path d="M16 20.5l1 .8" />
+                    <circle
+                        cx="8.5"
+                        cy="14.3"
+                        r=".9"
+                        fill="currentColor"
+                        stroke="none"
+                    />
+                    <circle
+                        cx="15.5"
+                        cy="14.3"
+                        r=".9"
+                        fill="currentColor"
+                        stroke="none"
+                    />
+                </symbol>
+                <symbol id="i-map" viewBox="0 0 24 24">
+                    <path
+                        d="M9 4.5 3.8 6.4v13.1L9 17.6l6 1.9 5.2-1.9V4.5L15 6.4 9 4.5z"
+                    />
+                    <path d="M9 4.5v13.1" />
+                    <path d="M15 6.4v13.1" />
+                </symbol>
+                <symbol id="i-pin" viewBox="0 0 24 24">
+                    <path
+                        d="M12 21.5c4-4.2 6.5-7.7 6.5-11A6.5 6.5 0 0 0 5.5 10.5c0 3.3 2.5 6.8 6.5 11z"
+                    />
+                    <circle cx="12" cy="10.4" r="2.4" />
+                </symbol>
+                <symbol id="i-shop" viewBox="0 0 24 24">
+                    <path d="M4.5 9.2 5.6 5h12.8l1.1 4.2" />
+                    <path
+                        d="M4.5 9.2a2.4 2.4 0 0 0 4.8 0 2.4 2.4 0 0 0 4.8 0 2.4 2.4 0 0 0 4.8 0"
+                    />
+                    <path d="M5.5 10v9.5h13V10" />
+                    <path d="M9.5 19.5V15h5v4.5" />
+                </symbol>
+                <symbol id="i-suitcase" viewBox="0 0 24 24">
+                    <rect x="4" y="7.5" width="16" height="12.5" rx="2.4" />
+                    <path
+                        d="M9 7.5V5.6A1.6 1.6 0 0 1 10.6 4h2.8A1.6 1.6 0 0 1 15 5.6V7.5"
+                    />
+                    <path d="M9 7.5V20" />
+                    <path d="M15 7.5V20" />
+                </symbol>
+                <symbol id="i-qa" viewBox="0 0 24 24">
+                    <path
+                        d="M4 5.5h10.5A1.8 1.8 0 0 1 16.3 7.3v5A1.8 1.8 0 0 1 14.5 14H9.5L6 17v-3H4A1.8 1.8 0 0 1 2.2 12.2V7.3A1.8 1.8 0 0 1 4 5.5z"
+                    />
+                    <path d="M8 8.6a1.7 1.7 0 0 1 3 1c0 1-1.3 1.2-1.3 2.2" />
+                    <circle
+                        cx="9.6"
+                        cy="13.3"
+                        r=".4"
+                        fill="currentColor"
+                        stroke="none"
+                    />
+                    <path
+                        d="M18 9.5h1.8A2 2 0 0 1 21.8 11.5v3.2a2 2 0 0 1-2 2v2.3l-2.6-2.3"
+                    />
+                </symbol>
+                <symbol id="i-phone" viewBox="0 0 24 24">
+                    <path
+                        d="M6 3.5h3l1.6 4-2.1 1.6a11.5 11.5 0 0 0 5.4 5.4l1.6-2.1 4 1.6v3a2 2 0 0 1-2.2 2A15.5 15.5 0 0 1 4 5.7 2 2 0 0 1 6 3.5z"
+                    />
+                </symbol>
+                <symbol id="i-mail" viewBox="0 0 24 24">
+                    <rect x="3" y="5.5" width="18" height="13" rx="2.2" />
+                    <path d="M3.5 7.5 12 13l8.5-5.5" />
+                </symbol>
+                <symbol id="i-ig" viewBox="0 0 24 24">
+                    <rect x="3.5" y="3.5" width="17" height="17" rx="5" />
+                    <circle cx="12" cy="12" r="4" />
+                    <circle
+                        cx="17.2"
+                        cy="6.8"
+                        r="1"
+                        fill="currentColor"
+                        stroke="none"
+                    />
+                </symbol>
+                <symbol id="i-copy" viewBox="0 0 24 24">
+                    <rect x="9" y="9" width="11" height="11" rx="2.2" />
+                    <path d="M5 15V6a2 2 0 0 1 2-2h8" />
+                </symbol>
+                <symbol id="i-check" viewBox="0 0 24 24">
+                    <path d="M5 12.5l4.5 4.5L19 7" />
+                </symbol>
+                <symbol id="i-clock" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="8.2" />
+                    <path d="M12 7.5V12l3.2 2" />
+                </symbol>
+                <symbol id="i-park" viewBox="0 0 24 24">
+                    <rect x="4" y="4" width="16" height="16" rx="3.4" />
+                    <path d="M10 16.5V8h3.3a2.6 2.6 0 0 1 0 5.2H10" />
+                </symbol>
+                <symbol id="i-temp" viewBox="0 0 24 24">
+                    <path d="M14 13.4V6a2 2 0 0 0-4 0v7.4a3.6 3.6 0 1 0 4 0z" />
+                    <circle
+                        cx="12"
+                        cy="16.6"
+                        r="1.3"
+                        fill="currentColor"
+                        stroke="none"
+                    />
+                </symbol>
+                <symbol id="i-washer" viewBox="0 0 24 24">
+                    <rect x="5" y="3" width="14" height="18" rx="2.4" />
+                    <circle cx="12" cy="13" r="4.4" />
+                    <circle cx="12" cy="13" r="1.8" />
+                    <path d="M8 6h.5" />
+                    <path d="M11 6h.5" />
+                </symbol>
+                <symbol id="i-trash" viewBox="0 0 24 24">
+                    <path d="M5 7h14" />
+                    <path
+                        d="M9 7V5a1.2 1.2 0 0 1 1.2-1.2h3.6A1.2 1.2 0 0 1 15 5v2"
+                    />
+                    <path d="M7 7l1 13h8l1-13" />
+                    <path d="M10.5 11v6" />
+                    <path d="M13.5 11v6" />
+                </symbol>
+                <symbol id="i-car" viewBox="0 0 24 24">
+                    <path
+                        d="M5 11.5l1.4-4.2A2 2 0 0 1 8.3 6h7.4a2 2 0 0 1 1.9 1.3L19 11.5"
+                    />
+                    <path d="M4 11.5h16v5.5H4z" />
+                    <circle cx="7.5" cy="17" r="1.6" />
+                    <circle cx="16.5" cy="17" r="1.6" />
+                </symbol>
+                <symbol id="i-bike" viewBox="0 0 24 24">
+                    <circle cx="6" cy="16" r="3.4" />
+                    <circle cx="18" cy="16" r="3.4" />
+                    <path d="M6 16l4-7h4.5" />
+                    <path d="M9 9h2" />
+                    <path d="M14.5 9l3.5 7" />
+                    <path d="M10 16h5" />
+                </symbol>
+                <symbol id="i-plane" viewBox="0 0 24 24">
+                    <path
+                        d="M21 14.5l-7.5-2 .2 5.2-1.8.9-1-4.2-3.4-.9-2.7 1.6-1.2-.7 2-2.4-2.7-2.2 1.2-.5 3.2 1.2 3.7-1.6 5-2.2a1.7 1.7 0 0 1 2.4 2z"
+                    />
+                </symbol>
+                <symbol id="i-coffee" viewBox="0 0 24 24">
+                    <path
+                        d="M5 8.5h11v4.5a4.2 4.2 0 0 1-4.2 4.2H9.2A4.2 4.2 0 0 1 5 13z"
+                    />
+                    <path d="M16 9.5h2.3a2.1 2.1 0 0 1 0 4.2H16" />
+                    <path d="M8 3.2v2" />
+                    <path d="M11 3.2v2" />
+                    <path d="M5 20.5h11" />
+                </symbol>
+                <symbol id="i-cart" viewBox="0 0 24 24">
+                    <circle cx="9.5" cy="19" r="1.4" />
+                    <circle cx="17" cy="19" r="1.4" />
+                    <path d="M3 4.5h2.2l2 11h10.2l1.6-7.5H6.3" />
+                </symbol>
+                <symbol id="i-cross" viewBox="0 0 24 24">
+                    <rect x="4" y="4" width="16" height="16" rx="4" />
+                    <path d="M12 8.5v7" />
+                    <path d="M8.5 12h7" />
+                </symbol>
+                <symbol id="i-fork" viewBox="0 0 24 24">
+                    <path d="M7 3v6" />
+                    <path d="M9.6 3v6" />
+                    <path d="M4.4 3v3.4a3.1 3.1 0 0 0 6.2 0V3" />
+                    <path d="M7.5 9v12" />
+                    <path d="M17.5 3c-1.7 1-2.6 3.6-2.6 6.4h2.6" />
+                    <path d="M17.5 3v18" />
+                </symbol>
+                <symbol id="i-wave" viewBox="0 0 24 24">
+                    <circle cx="17" cy="6.5" r="2.6" />
+                    <path
+                        d="M3 15c1.6 0 1.6-1.4 3.2-1.4S7.8 15 9.4 15s1.6-1.4 3.2-1.4S14.2 15 15.8 15s1.6-1.4 3.2-1.4"
+                    />
+                    <path
+                        d="M3 19c1.6 0 1.6-1.4 3.2-1.4S7.8 19 9.4 19s1.6-1.4 3.2-1.4S14.2 19 15.8 19s1.6-1.4 3.2-1.4"
+                    />
+                </symbol>
+                <symbol id="i-walk" viewBox="0 0 24 24">
+                    <circle cx="12.5" cy="4" r="2" />
+                    <path d="M12 7.6 10.4 12l2.6 1.7L14 19.5" />
+                    <path d="M10.4 12 7.9 14.2l-.7 3.8" />
+                    <path d="M10.9 9l3.2 1.5 2-1.3" />
+                </symbol>
+                <symbol id="i-star" viewBox="0 0 24 24">
+                    <path
+                        d="M12 3.2l2.6 5.6 6.1.8-4.5 4.2 1.1 6.1L12 17l-5.4 2.9 1.1-6.1L3.2 9.6l6.1-.8z"
+                        fill="currentColor"
+                        stroke="none"
+                    />
+                </symbol>
+                <symbol id="i-medal" viewBox="0 0 24 24">
+                    <path d="M8.7 13 6.5 20.5l5.5-2.8 5.5 2.8L20.8 6" />
+                    <path d="M8.7 13 5.2 6" />
+                    <circle cx="13" cy="8" r="5.4" />
+                    <path
+                        d="M13 5.2l.86 1.74 1.92.28-1.39 1.35.33 1.91L13 9.6l-1.72.9.33-1.91-1.39-1.35 1.92-.28z"
+                        fill="currentColor"
+                        stroke="none"
+                    />
+                </symbol>
+                <symbol id="i-heart" viewBox="0 0 24 24">
+                    <path
+                        d="M12 20s-7-4.6-7-9.6A3.9 3.9 0 0 1 12 7.5 3.9 3.9 0 0 1 19 10.4C19 15.4 12 20 12 20z"
+                    />
+                </symbol>
+                <symbol id="i-anchor" viewBox="0 0 24 24">
+                    <circle cx="12" cy="5.5" r="2" />
+                    <path d="M12 7.5V20" />
+                    <path d="M7 11H17" />
+                    <path d="M5 14a7 7 0 0 0 14 0" />
+                    <path d="M5 14H3.5M19 14h1.5" />
+                </symbol>
+                <symbol id="i-sun" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="4" />
+                    <path
+                        d="M12 3v2.2M12 18.8V21M3 12h2.2M18.8 12H21M5.6 5.6l1.6 1.6M16.8 16.8l1.6 1.6M18.4 5.6l-1.6 1.6M7.2 16.8l-1.6 1.6"
+                    />
+                </symbol>
+                <symbol id="i-eye" viewBox="0 0 24 24">
+                    <path
+                        d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"
+                    />
+                    <circle cx="12" cy="12" r="3" />
+                </symbol>
+                <symbol id="i-chevron" viewBox="0 0 24 24">
+                    <path d="M9 6l6 6-6 6" />
+                </symbol>
+            </defs>
+        </svg>
 
-<!-- ============ SVG ICON SPRITE ============ -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
-  <defs>
-    <symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="M19 12H5"/><path d="M11 18l-6-6 6-6"/></symbol>
-    <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="8" r="4.2"/><path d="M11 11l8.5 8.5"/><path d="M17 17.5l2-2"/><path d="M14.2 14.7l1.8 1.8"/></symbol>
-    <symbol id="i-arrive" viewBox="0 0 24 24"><path d="M13 3h5a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1h-5"/><path d="M9.5 8l4 4-4 4"/><path d="M3.5 12h10"/></symbol>
-    <symbol id="i-depart" viewBox="0 0 24 24"><path d="M11 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h5"/><path d="M16 8l4 4-4 4"/><path d="M10 12h10"/></symbol>
-    <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M4.5 10.2a11 11 0 0 1 15 0"/><path d="M7.6 13.4a6.6 6.6 0 0 1 8.8 0"/><path d="M10.4 16.5a2.6 2.6 0 0 1 3.2 0"/><circle cx="12" cy="19.2" r=".9" fill="currentColor" stroke="none"/></symbol>
-    <symbol id="i-house" viewBox="0 0 24 24"><path d="M4 11.2 12 5l8 6.2"/><path d="M6 10v9.5h12V10"/><path d="M10.2 19.5V14h3.6v5.5"/></symbol>
-    <symbol id="i-plate" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.4"/><circle cx="12" cy="12" r="4"/></symbol>
-    <symbol id="i-rules" viewBox="0 0 24 24"><rect x="5.5" y="3" width="13" height="18" rx="2"/><path d="M9 8h6"/><path d="M9 12h6"/><path d="M9 16h4"/></symbol>
-    <symbol id="i-aid" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2.4"/><path d="M9 7V5.4A1.4 1.4 0 0 1 10.4 4h3.2A1.4 1.4 0 0 1 15 5.4V7"/><path d="M12 11v5"/><path d="M9.5 13.5h5"/></symbol>
-    <symbol id="i-flame" viewBox="0 0 24 24"><path d="M12 3c.8 2.5 2.4 3.7 3.7 5.2A6.2 6.2 0 0 1 17.5 13a5.5 5.5 0 0 1-11 0c0-1.6.6-2.8 1.4-3.8.3 1 1 1.8 1.9 2.1C9.4 8.6 10.6 6.2 12 3z"/><path d="M12 20.5a2.6 2.6 0 0 0 2.6-2.6c0-1.4-1.3-2.2-2.6-3.4-1.3 1.2-2.6 2-2.6 3.4A2.6 2.6 0 0 0 12 20.5z"/></symbol>
-    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3.2l7 2.4v5.1c0 4.4-3 7.9-7 9.3-4-1.4-7-4.9-7-9.3V5.6z"/><path d="M9 11.6l2.1 2.1L15 9.8"/></symbol>
-    <symbol id="i-bus" viewBox="0 0 24 24"><rect x="5" y="3.5" width="14" height="14" rx="2.4"/><path d="M5 11h14"/><path d="M8.5 3.5v7.5"/><path d="M15.5 3.5v7.5"/><path d="M8 20.5l-1 .8"/><path d="M16 20.5l1 .8"/><circle cx="8.5" cy="14.3" r=".9" fill="currentColor" stroke="none"/><circle cx="15.5" cy="14.3" r=".9" fill="currentColor" stroke="none"/></symbol>
-    <symbol id="i-map" viewBox="0 0 24 24"><path d="M9 4.5 3.8 6.4v13.1L9 17.6l6 1.9 5.2-1.9V4.5L15 6.4 9 4.5z"/><path d="M9 4.5v13.1"/><path d="M15 6.4v13.1"/></symbol>
-    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21.5c4-4.2 6.5-7.7 6.5-11A6.5 6.5 0 0 0 5.5 10.5c0 3.3 2.5 6.8 6.5 11z"/><circle cx="12" cy="10.4" r="2.4"/></symbol>
-    <symbol id="i-shop" viewBox="0 0 24 24"><path d="M4.5 9.2 5.6 5h12.8l1.1 4.2"/><path d="M4.5 9.2a2.4 2.4 0 0 0 4.8 0 2.4 2.4 0 0 0 4.8 0 2.4 2.4 0 0 0 4.8 0"/><path d="M5.5 10v9.5h13V10"/><path d="M9.5 19.5V15h5v4.5"/></symbol>
-    <symbol id="i-suitcase" viewBox="0 0 24 24"><rect x="4" y="7.5" width="16" height="12.5" rx="2.4"/><path d="M9 7.5V5.6A1.6 1.6 0 0 1 10.6 4h2.8A1.6 1.6 0 0 1 15 5.6V7.5"/><path d="M9 7.5V20"/><path d="M15 7.5V20"/></symbol>
-    <symbol id="i-qa" viewBox="0 0 24 24"><path d="M4 5.5h10.5A1.8 1.8 0 0 1 16.3 7.3v5A1.8 1.8 0 0 1 14.5 14H9.5L6 17v-3H4A1.8 1.8 0 0 1 2.2 12.2V7.3A1.8 1.8 0 0 1 4 5.5z"/><path d="M8 8.6a1.7 1.7 0 0 1 3 1c0 1-1.3 1.2-1.3 2.2"/><circle cx="9.6" cy="13.3" r=".4" fill="currentColor" stroke="none"/><path d="M18 9.5h1.8A2 2 0 0 1 21.8 11.5v3.2a2 2 0 0 1-2 2v2.3l-2.6-2.3"/></symbol>
-    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6 3.5h3l1.6 4-2.1 1.6a11.5 11.5 0 0 0 5.4 5.4l1.6-2.1 4 1.6v3a2 2 0 0 1-2.2 2A15.5 15.5 0 0 1 4 5.7 2 2 0 0 1 6 3.5z"/></symbol>
-    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2.2"/><path d="M3.5 7.5 12 13l8.5-5.5"/></symbol>
-    <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></symbol>
-    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2.2"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/></symbol>
-    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></symbol>
-    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.2"/><path d="M12 7.5V12l3.2 2"/></symbol>
-    <symbol id="i-park" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3.4"/><path d="M10 16.5V8h3.3a2.6 2.6 0 0 1 0 5.2H10"/></symbol>
-    <symbol id="i-temp" viewBox="0 0 24 24"><path d="M14 13.4V6a2 2 0 0 0-4 0v7.4a3.6 3.6 0 1 0 4 0z"/><circle cx="12" cy="16.6" r="1.3" fill="currentColor" stroke="none"/></symbol>
-    <symbol id="i-washer" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2.4"/><circle cx="12" cy="13" r="4.4"/><circle cx="12" cy="13" r="1.8"/><path d="M8 6h.5"/><path d="M11 6h.5"/></symbol>
-    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M5 7h14"/><path d="M9 7V5a1.2 1.2 0 0 1 1.2-1.2h3.6A1.2 1.2 0 0 1 15 5v2"/><path d="M7 7l1 13h8l1-13"/><path d="M10.5 11v6"/><path d="M13.5 11v6"/></symbol>
-    <symbol id="i-car" viewBox="0 0 24 24"><path d="M5 11.5l1.4-4.2A2 2 0 0 1 8.3 6h7.4a2 2 0 0 1 1.9 1.3L19 11.5"/><path d="M4 11.5h16v5.5H4z"/><circle cx="7.5" cy="17" r="1.6"/><circle cx="16.5" cy="17" r="1.6"/></symbol>
-    <symbol id="i-bike" viewBox="0 0 24 24"><circle cx="6" cy="16" r="3.4"/><circle cx="18" cy="16" r="3.4"/><path d="M6 16l4-7h4.5"/><path d="M9 9h2"/><path d="M14.5 9l3.5 7"/><path d="M10 16h5"/></symbol>
-    <symbol id="i-plane" viewBox="0 0 24 24"><path d="M21 14.5l-7.5-2 .2 5.2-1.8.9-1-4.2-3.4-.9-2.7 1.6-1.2-.7 2-2.4-2.7-2.2 1.2-.5 3.2 1.2 3.7-1.6 5-2.2a1.7 1.7 0 0 1 2.4 2z"/></symbol>
-    <symbol id="i-coffee" viewBox="0 0 24 24"><path d="M5 8.5h11v4.5a4.2 4.2 0 0 1-4.2 4.2H9.2A4.2 4.2 0 0 1 5 13z"/><path d="M16 9.5h2.3a2.1 2.1 0 0 1 0 4.2H16"/><path d="M8 3.2v2"/><path d="M11 3.2v2"/><path d="M5 20.5h11"/></symbol>
-    <symbol id="i-cart" viewBox="0 0 24 24"><circle cx="9.5" cy="19" r="1.4"/><circle cx="17" cy="19" r="1.4"/><path d="M3 4.5h2.2l2 11h10.2l1.6-7.5H6.3"/></symbol>
-    <symbol id="i-cross" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="4"/><path d="M12 8.5v7"/><path d="M8.5 12h7"/></symbol>
-    <symbol id="i-fork" viewBox="0 0 24 24"><path d="M7 3v6"/><path d="M9.6 3v6"/><path d="M4.4 3v3.4a3.1 3.1 0 0 0 6.2 0V3"/><path d="M7.5 9v12"/><path d="M17.5 3c-1.7 1-2.6 3.6-2.6 6.4h2.6"/><path d="M17.5 3v18"/></symbol>
-    <symbol id="i-wave" viewBox="0 0 24 24"><circle cx="17" cy="6.5" r="2.6"/><path d="M3 15c1.6 0 1.6-1.4 3.2-1.4S7.8 15 9.4 15s1.6-1.4 3.2-1.4S14.2 15 15.8 15s1.6-1.4 3.2-1.4"/><path d="M3 19c1.6 0 1.6-1.4 3.2-1.4S7.8 19 9.4 19s1.6-1.4 3.2-1.4S14.2 19 15.8 19s1.6-1.4 3.2-1.4"/></symbol>
-    <symbol id="i-walk" viewBox="0 0 24 24"><circle cx="12.5" cy="4" r="2"/><path d="M12 7.6 10.4 12l2.6 1.7L14 19.5"/><path d="M10.4 12 7.9 14.2l-.7 3.8"/><path d="M10.9 9l3.2 1.5 2-1.3"/></symbol>
-    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3.2l2.6 5.6 6.1.8-4.5 4.2 1.1 6.1L12 17l-5.4 2.9 1.1-6.1L3.2 9.6l6.1-.8z" fill="currentColor" stroke="none"/></symbol>
-    <symbol id="i-medal" viewBox="0 0 24 24"><path d="M8.7 13 6.5 20.5l5.5-2.8 5.5 2.8L20.8 6"/><path d="M8.7 13 5.2 6"/><circle cx="13" cy="8" r="5.4"/><path d="M13 5.2l.86 1.74 1.92.28-1.39 1.35.33 1.91L13 9.6l-1.72.9.33-1.91-1.39-1.35 1.92-.28z" fill="currentColor" stroke="none"/></symbol>
-    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.6A3.9 3.9 0 0 1 12 7.5 3.9 3.9 0 0 1 19 10.4C19 15.4 12 20 12 20z"/></symbol>
-    <symbol id="i-anchor" viewBox="0 0 24 24"><circle cx="12" cy="5.5" r="2"/><path d="M12 7.5V20"/><path d="M7 11H17"/><path d="M5 14a7 7 0 0 0 14 0"/><path d="M5 14H3.5M19 14h1.5"/></symbol>
-    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 3v2.2M12 18.8V21M3 12h2.2M18.8 12H21M5.6 5.6l1.6 1.6M16.8 16.8l1.6 1.6M18.4 5.6l-1.6 1.6M7.2 16.8l-1.6 1.6"/></symbol>
-    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/></symbol>
-    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></symbol>
-  </defs>
-</svg>
+        <div id="app">
+            <!-- ====================== HOME ====================== -->
+            <section class="screen is-active" id="home">
+                <header class="hero">
+                    <p class="eyebrow">Welcome to</p>
+                    <h1 class="hero-title hero-logo">
+                        <picture>
+                            <source
+                                media="(prefers-color-scheme: dark)"
+                                srcset="assets/img/logo-dark.png"
+                            />
+                            <img
+                                src="assets/img/logo-light.png"
+                                alt="Your Apartment Catania"
+                                width="432"
+                                height="313"
+                            />
+                        </picture>
+                    </h1>
+                    <div class="collage">
+                        <img
+                            class="tall"
+                            src="assets/img/apt-terrace.jpg"
+                            width="760"
+                            height="1140"
+                            alt="Rooftop terrace with pergola and views over Catania"
+                        />
+                        <img
+                            src="assets/img/apt-living.jpg"
+                            width="1100"
+                            height="733"
+                            alt="Bright living room with red accents and dining area"
+                        />
+                        <img
+                            src="assets/img/apt-kitchen.jpg"
+                            width="820"
+                            height="1230"
+                            alt="Modern kitchen with the signature red fridge"
+                        />
+                    </div>
+                    <p class="hero-tagline script">Enjoy your stay!</p>
+                    <a
+                        class="hero-address"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Via+Caronda+283+95128+Catania+Italy"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Open the apartment address in Google Maps"
+                        ><svg class="ico"><use href="#i-pin" /></svg> Via
+                        Caronda 283, Catania
+                        <svg class="ico chev"><use href="#i-chevron" /></svg
+                    ></a>
+                </header>
 
-<div id="app">
+                <nav class="menu" aria-label="Guest book sections">
+                    <p class="section-eyebrow">Your guide book</p>
+                    <div class="menu-grid">
+                        <a class="menu-item" href="#checkin"
+                            ><span class="menu-ico"
+                                ><svg class="ico">
+                                    <use href="#i-key" /></svg></span
+                            ><span>Check In/Out</span></a
+                        >
+                        <a class="menu-item" href="#wifi"
+                            ><span class="menu-ico"
+                                ><svg class="ico">
+                                    <use href="#i-wifi" /></svg></span
+                            ><span>Wifi</span></a
+                        >
+                        <a class="menu-item" href="#houseinfo"
+                            ><span class="menu-ico"
+                                ><svg class="ico">
+                                    <use href="#i-house" /></svg></span
+                            ><span>House Info</span></a
+                        >
+                        <a class="menu-item" href="#kitchen"
+                            ><span class="menu-ico"
+                                ><svg class="ico">
+                                    <use href="#i-plate" /></svg></span
+                            ><span>Kitchen &amp; Other Areas</span></a
+                        >
+                        <a class="menu-item" href="#rules"
+                            ><span class="menu-ico"
+                                ><svg class="ico">
+                                    <use href="#i-rules" /></svg></span
+                            ><span>House Rules</span></a
+                        >
+                        <a class="menu-item" href="#emergency"
+                            ><span class="menu-ico"
+                                ><svg class="ico">
+                                    <use href="#i-aid" /></svg></span
+                            ><span>Emergency</span></a
+                        >
+                        <a class="menu-item" href="#transport"
+                            ><span class="menu-ico"
+                                ><svg class="ico">
+                                    <use href="#i-bus" /></svg></span
+                            ><span>Transportation</span></a
+                        >
+                        <a class="menu-item" href="#thingstodo"
+                            ><span class="menu-ico"
+                                ><svg class="ico">
+                                    <use href="#i-map" /></svg></span
+                            ><span>Things to do</span></a
+                        >
+                        <a class="menu-item" href="#nearest"
+                            ><span class="menu-ico"
+                                ><svg class="ico">
+                                    <use href="#i-pin" /></svg></span
+                            ><span>Your Nearest</span></a
+                        >
+                        <a class="menu-item" href="#eat"
+                            ><span class="menu-ico"
+                                ><svg class="ico">
+                                    <use href="#i-shop" /></svg></span
+                            ><span>Places To Eat</span></a
+                        >
+                        <a class="menu-item" href="#beforeyougo"
+                            ><span class="menu-ico"
+                                ><svg class="ico">
+                                    <use href="#i-suitcase" /></svg></span
+                            ><span>Before You Go</span></a
+                        >
+                        <a class="menu-item" href="#faq"
+                            ><span class="menu-ico"
+                                ><svg class="ico">
+                                    <use href="#i-qa" /></svg></span
+                            ><span>Q&amp;A</span></a
+                        >
+                    </div>
+                </nav>
 
-  <!-- ====================== HOME ====================== -->
-  <section class="screen is-active" id="home">
-    <header class="hero">
-      <p class="eyebrow">Welcome to</p>
-      <h1 class="hero-title hero-logo">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="assets/img/logo-dark.png">
-          <img src="assets/img/logo-light.png" alt="Your Apartment Catania" width="432" height="313">
-        </picture>
-      </h1>
-      <div class="collage">
-        <img class="tall" src="assets/img/apt-terrace.jpg" width="760" height="1140" alt="Rooftop terrace with pergola and views over Catania">
-        <img src="assets/img/apt-living.jpg" width="1100" height="733" alt="Bright living room with red accents and dining area">
-        <img src="assets/img/apt-kitchen.jpg" width="820" height="1230" alt="Modern kitchen with the signature red fridge">
-      </div>
-      <p class="hero-tagline script">Enjoy your stay!</p>
-      <a class="hero-address" href="https://www.google.com/maps/search/?api=1&amp;query=Via+Caronda+283+95128+Catania+Italy" target="_blank" rel="noopener" aria-label="Open the apartment address in Google Maps"><svg class="ico"><use href="#i-pin"/></svg> Via Caronda 283, Catania <svg class="ico chev"><use href="#i-chevron"/></svg></a>
-    </header>
+                <section class="host-block">
+                    <p class="section-eyebrow">Meet your host</p>
+                    <a
+                        class="host-card"
+                        href="#host"
+                        aria-label="Read more about your host, Stefano"
+                    >
+                        <span class="hc-avatar">
+                            <img
+                                src="assets/img/host.jpg"
+                                width="820"
+                                height="1092"
+                                alt="Stefano, your host"
+                                loading="lazy"
+                            />
+                        </span>
+                        <span class="hc-name">Stefano</span>
+                        <span class="hc-role">10+ years hosting</span>
+                        <span class="hc-quote"
+                            >&ldquo;For me, hospitality is not just a job
+                            &mdash; it&rsquo;s a true pleasure.&rdquo;</span
+                        >
+                        <span class="hc-cta"
+                            >Read his story
+                            <svg class="ico"><use href="#i-chevron" /></svg
+                        ></span>
+                    </a>
+                </section>
 
-    <nav class="menu" aria-label="Guest book sections">
-      <p class="section-eyebrow">Your guide book</p>
-      <div class="menu-grid">
-        <a class="menu-item" href="#checkin"><span class="menu-ico"><svg class="ico"><use href="#i-key"/></svg></span><span>Check In/Out</span></a>
-        <a class="menu-item" href="#wifi"><span class="menu-ico"><svg class="ico"><use href="#i-wifi"/></svg></span><span>Wifi</span></a>
-        <a class="menu-item" href="#houseinfo"><span class="menu-ico"><svg class="ico"><use href="#i-house"/></svg></span><span>House Info</span></a>
-        <a class="menu-item" href="#kitchen"><span class="menu-ico"><svg class="ico"><use href="#i-plate"/></svg></span><span>Kitchen &amp; Other Areas</span></a>
-        <a class="menu-item" href="#rules"><span class="menu-ico"><svg class="ico"><use href="#i-rules"/></svg></span><span>House Rules</span></a>
-        <a class="menu-item" href="#emergency"><span class="menu-ico"><svg class="ico"><use href="#i-aid"/></svg></span><span>Emergency</span></a>
-        <a class="menu-item" href="#transport"><span class="menu-ico"><svg class="ico"><use href="#i-bus"/></svg></span><span>Transportation</span></a>
-        <a class="menu-item" href="#thingstodo"><span class="menu-ico"><svg class="ico"><use href="#i-map"/></svg></span><span>Things to do</span></a>
-        <a class="menu-item" href="#nearest"><span class="menu-ico"><svg class="ico"><use href="#i-pin"/></svg></span><span>Your Nearest</span></a>
-        <a class="menu-item" href="#eat"><span class="menu-ico"><svg class="ico"><use href="#i-shop"/></svg></span><span>Places To Eat</span></a>
-        <a class="menu-item" href="#beforeyougo"><span class="menu-ico"><svg class="ico"><use href="#i-suitcase"/></svg></span><span>Before You Go</span></a>
-        <a class="menu-item" href="#faq"><span class="menu-ico"><svg class="ico"><use href="#i-qa"/></svg></span><span>Q&amp;A</span></a>
-      </div>
-    </nav>
+                <footer class="home-footer">
+                    <p class="script home-footer-script">Enjoy your stay!</p>
+                    <div class="contact-row">
+                        <a class="contact-pill" href="tel:+393928358558"
+                            ><svg class="ico"><use href="#i-phone" /></svg> +39
+                            392 8358558</a
+                        >
+                        <a
+                            class="contact-pill"
+                            href="https://wa.me/393928358558"
+                            target="_blank"
+                            rel="noopener"
+                            ><svg class="ico"><use href="#i-phone" /></svg>
+                            WhatsApp</a
+                        >
+                    </div>
+                    <p class="footer-addr">
+                        Via Caronda 283, 95128 Catania · Italy
+                    </p>
+                </footer>
+            </section>
 
-    <section class="host-block">
-      <p class="section-eyebrow">Meet your host</p>
-      <a class="host-card" href="#host" aria-label="Read more about your host, Stefano">
-        <span class="hc-avatar">
-          <img src="assets/img/host.jpg" width="820" height="1092" alt="Stefano, your host" loading="lazy">
-        </span>
-        <span class="hc-name">Stefano</span>
-        <span class="hc-role">10+ years hosting</span>
-        <span class="hc-quote">&ldquo;For me, hospitality is not just a job &mdash; it&rsquo;s a true pleasure.&rdquo;</span>
-        <span class="hc-cta">Read his story <svg class="ico"><use href="#i-chevron"/></svg></span>
-      </a>
-    </section>
+            <!-- ====================== HOST ====================== -->
+            <section class="screen" id="host" data-title="Your Host">
+                <div class="page">
+                    <p class="eyebrow center">Meet your host</p>
+                    <h1 class="page-title center">
+                        <span class="script script-lead">Hello,</span><br />I'm
+                        Stefano
+                    </h1>
+                    <div class="host-meta">
+                        <span class="host-meta-stats"
+                            ><b>10+</b> years hosting</span
+                        >
+                    </div>
+                    <img
+                        class="rounded full-img"
+                        src="assets/img/host.jpg"
+                        width="820"
+                        height="1092"
+                        alt="Stefano, your host"
+                        loading="lazy"
+                    />
+                    <blockquote class="quote">
+                        Welcome to Your Apartment Catania.
+                        <br /><br />
+                        For over ten years, I have been working in the
+                        hospitality sector between Catania and Malta with
+                        passion, professionalism, and great attention to every
+                        guest. Over the years, I have gained valuable experience
+                        that allows me to offer carefully curated and
+                        comfortable stays, making every guest feel welcomed and
+                        at home.
+                        <br /><br />
+                        For me, hospitality is not just a job, but a true
+                        pleasure. I am always available to assist my guests,
+                        provide useful recommendations, and share tips to help
+                        them fully enjoy their stay while discovering the beauty
+                        of the area, the local culture, and authentic
+                        experiences.
+                        <br /><br />
+                        My goal is to ensure a pleasant, relaxing, and
+                        high-quality experience, so that every stay becomes
+                        special and memorable.
+                    </blockquote>
+                    <div class="contact-stack">
+                        <a class="contact-line" href="tel:+393928358558"
+                            ><span class="ci"
+                                ><svg class="ico"><use href="#i-phone" /></svg
+                            ></span>
+                            +39 392 8358558</a
+                        >
+                        <a
+                            class="contact-line"
+                            href="https://wa.me/393928358558"
+                            target="_blank"
+                            rel="noopener"
+                            ><span class="ci"
+                                ><svg class="ico"><use href="#i-phone" /></svg
+                            ></span>
+                            Message on WhatsApp</a
+                        >
+                    </div>
+                    <p class="closing script">Enjoy your stay!</p>
+                </div>
+            </section>
 
-    <footer class="home-footer">
-      <p class="script home-footer-script">Enjoy your stay!</p>
-      <div class="contact-row">
-        <a class="contact-pill" href="tel:+393928358558"><svg class="ico"><use href="#i-phone"/></svg> +39 392 8358558</a>
-        <a class="contact-pill" href="https://wa.me/393928358558" target="_blank" rel="noopener"><svg class="ico"><use href="#i-phone"/></svg> WhatsApp</a>
-      </div>
-      <p class="footer-addr">Via Caronda 283, 95128 Catania · Italy</p>
-    </footer>
-  </section>
+            <!-- ====================== CHECK IN / OUT ====================== -->
+            <section class="screen" id="checkin" data-title="Check In / Out">
+                <div class="page">
+                    <h1 class="page-title center">
+                        Check In <span class="amp">&amp;</span> Out
+                    </h1>
+                    <div class="io-grid">
+                        <div class="io-card">
+                            <span class="io-ico"
+                                ><svg class="ico"><use href="#i-arrive" /></svg
+                            ></span>
+                            <span class="io-label">Check in</span>
+                            <span class="io-when">from</span>
+                            <span class="io-time">2:00 PM</span>
+                        </div>
+                        <div class="io-card">
+                            <span class="io-ico"
+                                ><svg class="ico"><use href="#i-depart" /></svg
+                            ></span>
+                            <span class="io-label">Check out</span>
+                            <span class="io-when">by</span>
+                            <span class="io-time">10:00 AM</span>
+                        </div>
+                    </div>
+                    <ul class="info-list io-details">
+                        <li>
+                            <span class="li-ico"
+                                ><svg class="ico"><use href="#i-arrive" /></svg
+                            ></span>
+                            <div>
+                                <h3>Self check-in</h3>
+                                <p>
+                                    Please find the instructions to access Your
+                                    Apartment below.
+                                </p>
+                                <ul class="checklist io-checklist">
+                                    <li>
+                                        <span class="cl-ico"
+                                            ><svg class="ico">
+                                                <use href="#i-check" /></svg
+                                        ></span>
+                                        Send me a message on WhatsApp to inform
+                                        me about your arrival; I will open the
+                                        main door as soon as I receive it.
+                                    </li>
+                                    <li>
+                                        <span class="cl-ico"
+                                            ><svg class="ico">
+                                                <use href="#i-check" /></svg
+                                        ></span>
+                                        Take the elevator to reach the apartment
+                                        (6th floor).
+                                    </li>
+                                    <li>
+                                        <span class="cl-ico"
+                                            ><svg class="ico">
+                                                <use href="#i-check" /></svg
+                                        ></span>
+                                        The apartment is located on the right of
+                                        the elevator.
+                                    </li>
+                                    <li>
+                                        <span class="cl-ico"
+                                            ><svg class="ico">
+                                                <use href="#i-check" /></svg
+                                        ></span>
+                                        Close to the white cabinet you'll find a
+                                        key box.
+                                    </li>
+                                </ul>
+                                <ul class="checklist io-checklist">
+                                    <li>
+                                        <span class="cl-ico"
+                                            ><svg class="ico">
+                                                <use href="#i-key" /></svg
+                                        ></span>
+                                        Apartment N.1 · key box code <b>1982</b>
+                                    </li>
+                                </ul>
+                                <p>
+                                    Please note: you'll also have a special key
+                                    (the smallest one) for the elevator,
+                                    included with your set.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="li-ico"
+                                ><svg class="ico"><use href="#i-depart" /></svg
+                            ></span>
+                            <div>
+                                <h3>On departure</h3>
+                                <p>Before leaving the apartment, please:</p>
+                                <ul class="checklist io-checklist">
+                                    <li>
+                                        <span class="cl-ico"
+                                            ><svg class="ico">
+                                                <use href="#i-check" /></svg
+                                        ></span>
+                                        Switch off all lights and air
+                                        conditioners
+                                    </li>
+                                    <li>
+                                        <span class="cl-ico"
+                                            ><svg class="ico">
+                                                <use href="#i-check" /></svg
+                                        ></span>
+                                        Make sure all windows are closed
+                                    </li>
+                                    <li>
+                                        <span class="cl-ico"
+                                            ><svg class="ico">
+                                                <use href="#i-check" /></svg
+                                        ></span>
+                                        Leave keys and city tax payment on the
+                                        kitchen table
+                                    </li>
+                                    <li>
+                                        <span class="cl-ico"
+                                            ><svg class="ico">
+                                                <use href="#i-check" /></svg
+                                        ></span>
+                                        Send me a message when you leave, so I
+                                        can coordinate the cleaning
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
 
-  <!-- ====================== HOST ====================== -->
-  <section class="screen" id="host" data-title="Your Host">
-    <div class="page">
-      <p class="eyebrow center">Meet your host</p>
-      <h1 class="page-title center"><span class="script script-lead">Hello,</span><br>I'm Stefano</h1>
-      <div class="host-meta">
-        <span class="host-meta-stats"><b>10+</b> years hosting</span>
-      </div>
-      <img class="rounded full-img" src="assets/img/host.jpg" width="820" height="1092" alt="Stefano, your host" loading="lazy">
-      <blockquote class="quote">
-        Welcome to Your Apartment Catania.
-        <br><br>
-        For over ten years, I have been working in the hospitality sector between Catania and Malta with passion, professionalism, and great attention to every guest. Over the years, I have gained valuable experience that allows me to offer carefully curated and comfortable stays, making every guest feel welcomed and at home.
-        <br><br>
-        For me, hospitality is not just a job, but a true pleasure. I am always available to assist my guests, provide useful recommendations, and share tips to help them fully enjoy their stay while discovering the beauty of the area, the local culture, and authentic experiences.
-        <br><br>
-        My goal is to ensure a pleasant, relaxing, and high-quality experience, so that every stay becomes special and memorable.
-      </blockquote>
-      <div class="contact-stack">
-        <a class="contact-line" href="tel:+393928358558"><span class="ci"><svg class="ico"><use href="#i-phone"/></svg></span> +39 392 8358558</a>
-        <a class="contact-line" href="https://wa.me/393928358558" target="_blank" rel="noopener"><span class="ci"><svg class="ico"><use href="#i-phone"/></svg></span> Message on WhatsApp</a>
-      </div>
-      <p class="closing script">Enjoy your stay!</p>
-    </div>
-  </section>
+                    <h2 class="sub">Good to know</h2>
+                    <ol class="tips">
+                        <li>
+                            <span class="num">01</span>
+                            <p>
+                                Catania is a sunny city — bring sunscreen, a hat
+                                and water for daytime sightseeing, especially
+                                from late spring through early autumn.
+                            </p>
+                        </li>
+                        <li>
+                            <span class="num">02</span>
+                            <p>
+                                Coffee and granita with brioche are the local
+                                way to start the morning — don't miss it.
+                            </p>
+                        </li>
+                        <li>
+                            <span class="num">03</span>
+                            <p>
+                                Most shops and small restaurants close in the
+                                early afternoon and reopen in the evening — plan
+                                lunch around 1:00 PM.
+                            </p>
+                        </li>
+                        <li>
+                            <span class="num">04</span>
+                            <p>
+                                Cash is still handy for small purchases at
+                                markets and kiosks, even though cards are widely
+                                accepted.
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+            </section>
 
-  <!-- ====================== CHECK IN / OUT ====================== -->
-  <section class="screen" id="checkin" data-title="Check In / Out">
-    <div class="page">
-      <h1 class="page-title center">Check In <span class="amp">&amp;</span> Out</h1>
-      <div class="io-grid">
-        <div class="io-card">
-          <span class="io-ico"><svg class="ico"><use href="#i-arrive"/></svg></span>
-          <span class="io-label">Check in</span>
-          <span class="io-when">from</span>
-          <span class="io-time">2:00 PM</span>
+            <!-- ====================== WIFI ====================== -->
+            <section class="screen" id="wifi" data-title="Wifi">
+                <div class="page">
+                    <h1 class="page-title center">WiFi</h1>
+                    <p class="lead center">
+                        Scan to connect — or use the details below.
+                    </p>
+                    <div class="wifi-qr-card">
+                        <div
+                            id="wifi-qr"
+                            class="wifi-qr"
+                            role="img"
+                            aria-label="Wi-Fi QR code"
+                        ></div>
+                        <p class="wifi-qr-label">
+                            Point your camera here to join
+                        </p>
+                    </div>
+                    <div class="wifi-card">
+                        <div class="wifi-row">
+                            <span class="wifi-ico"
+                                ><svg class="ico"><use href="#i-wifi" /></svg
+                            ></span>
+                            <div>
+                                <p class="eyebrow">Network name</p>
+                                <p class="wifi-value">Wind3 Hub-406D51</p>
+                            </div>
+                        </div>
+                        <div class="hr"></div>
+                        <div class="wifi-row">
+                            <span class="wifi-ico"
+                                ><svg class="ico"><use href="#i-key" /></svg
+                            ></span>
+                            <div>
+                                <p class="eyebrow">Password</p>
+                                <p class="wifi-value" id="wifi-pass">
+                                    880bmgx8d78cjuip
+                                </p>
+                            </div>
+                            <button
+                                class="copy-btn"
+                                data-copy="880bmgx8d78cjuip"
+                                aria-label="Copy password"
+                            >
+                                <svg class="ico ico-copy">
+                                    <use href="#i-copy" />
+                                </svg>
+                                <svg class="ico ico-done">
+                                    <use href="#i-check" />
+                                </svg>
+                                <span class="copy-label">Copy</span>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="note center">
+                        If the Wi-Fi gives you any trouble, just send Stefano a
+                        message and we'll sort it out.
+                    </p>
+                </div>
+            </section>
+
+            <!-- ====================== HOUSE INFO ====================== -->
+            <section class="screen" id="houseinfo" data-title="House Info">
+                <div class="page">
+                    <h1 class="page-title center">House Info</h1>
+                    <ul class="info-list">
+                        <li>
+                            <span class="li-ico"
+                                ><svg class="ico"><use href="#i-park" /></svg
+                            ></span>
+                            <div>
+                                <h3>Parking</h3>
+                                <p>
+                                    There's no private parking, but you can park
+                                    for free on the street. Alternatively, a
+                                    24/7 paid parking lot is just 30 metres from
+                                    the building.
+                                </p>
+                                <a
+                                    class="inline-action"
+                                    href="https://share.google/zgbofdUb3K6da2Ikx"
+                                    target="_blank"
+                                    rel="noopener"
+                                    ><svg class="ico">
+                                        <use href="#i-pin" />
+                                    </svg>
+                                    <span class="txt"
+                                        >View the parking lot</span
+                                    ></a
+                                >
+                            </div>
+                        </li>
+                        <li>
+                            <span class="li-ico"
+                                ><svg class="ico"><use href="#i-temp" /></svg
+                            ></span>
+                            <div>
+                                <h3>Temperature</h3>
+                                <p>
+                                    You'll find dedicated remote controls for
+                                    the air conditioning, both in the bedroom
+                                    and in the living area. Please switch them
+                                    off when leaving the apartment.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="li-ico"
+                                ><svg class="ico"><use href="#i-washer" /></svg
+                            ></span>
+                            <div>
+                                <h3>Laundry service</h3>
+                                <p>
+                                    A coin-operated laundromat is just a short
+                                    walk from the apartment, open 24/7.
+                                </p>
+                                <a
+                                    class="inline-action"
+                                    href="https://share.google/MWvxsWdIHsGeZLfC9"
+                                    target="_blank"
+                                    rel="noopener"
+                                    ><svg class="ico">
+                                        <use href="#i-pin" />
+                                    </svg>
+                                    <span class="txt"
+                                        >View the laundromat</span
+                                    ></a
+                                >
+                            </div>
+                        </li>
+                        <li>
+                            <span class="li-ico"
+                                ><svg class="ico"><use href="#i-trash" /></svg
+                            ></span>
+                            <div>
+                                <h3>Trash &amp; recycling</h3>
+                                <p>
+                                    Please leave the rubbish bags on the street
+                                    next to the building entrance only during
+                                    the allowed hours,
+                                    <b>from 8:00 PM onwards</b>. Separate the
+                                    waste according to the local collection
+                                    calendar — help us keep the neighbourhood
+                                    clean.
+                                </p>
+                                <a
+                                    href="assets/img/waste-calendar.jpg"
+                                    target="_blank"
+                                    rel="noopener"
+                                    aria-label="Open the household waste collection calendar"
+                                    ><img
+                                        class="rounded full-img"
+                                        src="assets/img/waste-calendar.jpg"
+                                        width="1049"
+                                        height="806"
+                                        alt="GEMA household waste collection calendar — Lotto Centro, Catania"
+                                        loading="lazy"
+                                /></a>
+                                <a
+                                    class="inline-action"
+                                    href="https://www.gema-spa.com/wp-content/uploads/2025/02/Calendario_UTENZE_DOMESTICHE_UD_-italiano.pdf"
+                                    target="_blank"
+                                    rel="noopener"
+                                    ><svg class="ico">
+                                        <use href="#i-rules" />
+                                    </svg>
+                                    <span class="txt"
+                                        >Download the official PDF</span
+                                    ></a
+                                >
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- ====================== KITCHEN ====================== -->
+            <section
+                class="screen"
+                id="kitchen"
+                data-title="Kitchen &amp; Other Areas"
+            >
+                <div class="page">
+                    <h1 class="page-title center">
+                        Kitchen <span class="amp">&amp;</span> Other Areas
+                    </h1>
+                    <img
+                        class="rounded full-img"
+                        src="assets/img/apt-kitchen.jpg"
+                        width="1100"
+                        height="733"
+                        alt="Modern kitchen with induction hob, oven and the signature red fridge"
+                        loading="lazy"
+                    />
+                    <p class="lead">Make yourself completely at home.</p>
+                    <p>
+                        The kitchen is fully equipped for everything from a
+                        quick breakfast to a proper dinner — help yourself to
+                        whatever you need.
+                    </p>
+
+                    <h2 class="sub">In the kitchen</h2>
+                    <ul class="amenity-grid">
+                        <li>
+                            <span class="ck"
+                                ><svg class="ico"><use href="#i-check" /></svg
+                            ></span>
+                            Induction hob &amp; oven
+                        </li>
+                        <li>
+                            <span class="ck"
+                                ><svg class="ico"><use href="#i-check" /></svg
+                            ></span>
+                            Full-size fridge
+                        </li>
+                        <li>
+                            <span class="ck"
+                                ><svg class="ico"><use href="#i-check" /></svg
+                            ></span>
+                            Coffee maker
+                        </li>
+                        <li>
+                            <span class="ck"
+                                ><svg class="ico"><use href="#i-check" /></svg
+                            ></span>
+                            Kettle &amp; toaster
+                        </li>
+                    </ul>
+
+                    <h2 class="sub">Coffee &amp; tea</h2>
+                    <p>
+                        A coffee maker is ready to go, and we keep tea, coffee
+                        and sugar stocked for you — start your morning just the
+                        way you like it.
+                    </p>
+
+                    <a
+                        class="cta"
+                        href="https://wa.me/393928358558"
+                        target="_blank"
+                        rel="noopener"
+                        ><svg class="ico"><use href="#i-phone" /></svg> Send a
+                        message to Stefano</a
+                    >
+                </div>
+            </section>
+
+            <!-- ====================== HOUSE RULES ====================== -->
+            <section class="screen" id="rules" data-title="House Rules">
+                <div class="page">
+                    <h1 class="page-title center">House Rules</h1>
+                    <div class="duo">
+                        <img
+                            class="rounded"
+                            src="assets/img/apt-living.jpg"
+                            width="1100"
+                            height="733"
+                            alt="Living room with red accents"
+                            loading="lazy"
+                        />
+                        <img
+                            class="rounded"
+                            src="assets/img/apt-terrace.jpg"
+                            width="820"
+                            height="1230"
+                            alt="Rooftop terrace"
+                            loading="lazy"
+                        />
+                    </div>
+                    <ul class="rules">
+                        <li>No loud noise after 10:00 PM</li>
+                        <li>No parties or events</li>
+                        <li>No smoking inside the apartment</li>
+                        <li>No pets allowed</li>
+                        <li>Turn off the AC and lights when you go out</li>
+                        <li>Please don't rearrange the furniture</li>
+                        <li>Respect the check-in and check-out times</li>
+                        <li>
+                            Help us keep the neighbourhood clean — separate the
+                            waste
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- ====================== EMERGENCY ====================== -->
+            <section class="screen" id="emergency" data-title="Emergency">
+                <div class="page">
+                    <h1 class="page-title center">Emergency Info</h1>
+                    <a class="emg-hero" href="tel:112">
+                        <span class="emg-hero-l">
+                            <span class="emg-hero-label"
+                                >Any emergency · call</span
+                            >
+                            <span class="emg-hero-num">112</span>
+                        </span>
+                        <span class="emg-hero-ico"
+                            ><svg class="ico"><use href="#i-phone" /></svg
+                        ></span>
+                    </a>
+                    <div class="emg-list">
+                        <div class="emg">
+                            <span class="li-ico"
+                                ><svg class="ico"><use href="#i-cross" /></svg
+                            ></span>
+                            <div>
+                                <h3>Medical Emergency</h3>
+                                <a class="emg-tel" href="tel:118">118</a
+                                ><a
+                                    class="addr"
+                                    href="https://www.google.com/maps/search/?api=1&amp;query=Ospedale+Garibaldi+Centro+Catania"
+                                    target="_blank"
+                                    rel="noopener"
+                                    ><svg class="ico pin">
+                                        <use href="#i-pin" />
+                                    </svg>
+                                    Ospedale Garibaldi Centro, Catania
+                                    <svg class="ico chev">
+                                        <use href="#i-chevron" /></svg
+                                ></a>
+                            </div>
+                        </div>
+                        <div class="emg">
+                            <span class="li-ico"
+                                ><svg class="ico"><use href="#i-flame" /></svg
+                            ></span>
+                            <div>
+                                <h3>Fire &amp; Rescue</h3>
+                                <a class="emg-tel" href="tel:115">115</a
+                                ><a
+                                    class="addr"
+                                    href="https://www.google.com/maps/search/?api=1&amp;query=Vigili+del+Fuoco+Catania"
+                                    target="_blank"
+                                    rel="noopener"
+                                    ><svg class="ico pin">
+                                        <use href="#i-pin" />
+                                    </svg>
+                                    Vigili del Fuoco, Catania
+                                    <svg class="ico chev">
+                                        <use href="#i-chevron" /></svg
+                                ></a>
+                            </div>
+                        </div>
+                        <div class="emg">
+                            <span class="li-ico"
+                                ><svg class="ico"><use href="#i-shield" /></svg
+                            ></span>
+                            <div>
+                                <h3>Police</h3>
+                                <a class="emg-tel" href="tel:113">113</a
+                                ><a
+                                    class="addr"
+                                    href="https://www.google.com/maps/search/?api=1&amp;query=Questura+di+Catania"
+                                    target="_blank"
+                                    rel="noopener"
+                                    ><svg class="ico pin">
+                                        <use href="#i-pin" />
+                                    </svg>
+                                    Questura di Catania
+                                    <svg class="ico chev">
+                                        <use href="#i-chevron" /></svg
+                                ></a>
+                            </div>
+                        </div>
+                        <div class="emg">
+                            <span class="li-ico"
+                                ><svg class="ico"><use href="#i-car" /></svg
+                            ></span>
+                            <div>
+                                <h3>Roadside Assistance · ACI</h3>
+                                <a class="emg-tel" href="tel:803116">803 116</a
+                                ><a
+                                    class="addr"
+                                    href="https://www.aci.it/i-servizi/soccorso-stradale.html"
+                                    target="_blank"
+                                    rel="noopener"
+                                    ><svg class="ico pin">
+                                        <use href="#i-pin" />
+                                    </svg>
+                                    ACI · Soccorso Stradale
+                                    <svg class="ico chev">
+                                        <use href="#i-chevron" /></svg
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="callout">
+                        <span class="li-ico"
+                            ><svg class="ico"><use href="#i-aid" /></svg
+                        ></span>
+                        <div>
+                            <h3>First aid kit</h3>
+                            <p>
+                                A first-aid and emergency kit is available in
+                                each apartment.
+                            </p>
+                        </div>
+                    </div>
+                    <h2 class="sub">Reference</h2>
+                    <a
+                        href="assets/img/emergency-112.jpg"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Open the 112 single emergency number reference poster"
+                        ><img
+                            class="rounded full-img"
+                            src="assets/img/emergency-112.jpg"
+                            width="1047"
+                            height="1503"
+                            alt="The Single Emergency Number 112 — Ministry of the Interior reference poster"
+                            loading="lazy"
+                    /></a>
+                    <p class="note center">
+                        Italy's Single Emergency Number is <b>112</b> — police,
+                        fire brigade, ambulance.
+                        <a
+                            href="https://www.112.gov.it/"
+                            target="_blank"
+                            rel="noopener"
+                            >112.gov.it</a
+                        >
+                    </p>
+                </div>
+            </section>
+
+            <!-- ====================== TRANSPORT ====================== -->
+            <section class="screen" id="transport" data-title="Transportation">
+                <div class="page">
+                    <h1 class="page-title center">Getting Around</h1>
+                    <ul class="info-list">
+                        <li>
+                            <span class="li-ico"
+                                ><svg class="ico"><use href="#i-bus" /></svg
+                            ></span>
+                            <div>
+                                <h3>Nearest bus stop</h3>
+                                <p>
+                                    The closest stop is just steps from the
+                                    building — convenient for reaching the city
+                                    centre and the seafront.
+                                </p>
+                                <a
+                                    class="inline-action"
+                                    href="https://share.google/v5zBijEth14GaCsme"
+                                    target="_blank"
+                                    rel="noopener"
+                                    ><svg class="ico">
+                                        <use href="#i-pin" />
+                                    </svg>
+                                    <span class="txt">View on map</span></a
+                                >
+                            </div>
+                        </li>
+                        <li>
+                            <span class="li-ico"
+                                ><svg class="ico"><use href="#i-bus" /></svg
+                            ></span>
+                            <div>
+                                <h3>City buses · AMTS</h3>
+                                <p>
+                                    Catania's public bus network. Check routes
+                                    and schedules online.
+                                </p>
+                                <a
+                                    class="inline-action"
+                                    href="https://www.amts.ct.it/percorsi-e-orari"
+                                    target="_blank"
+                                    rel="noopener"
+                                    ><svg class="ico">
+                                        <use href="#i-map" />
+                                    </svg>
+                                    <span class="txt"
+                                        >Routes &amp; timetables</span
+                                    ></a
+                                >
+                            </div>
+                        </li>
+                        <li>
+                            <span class="li-ico"
+                                ><svg class="ico"><use href="#i-bus" /></svg
+                            ></span>
+                            <div>
+                                <h3>Circumetnea railway</h3>
+                                <p>
+                                    The historic narrow-gauge railway that loops
+                                    around Mount Etna — a scenic ride through
+                                    lava fields and small villages.
+                                </p>
+                                <a
+                                    class="inline-action"
+                                    href="https://www.circumetnea.it"
+                                    target="_blank"
+                                    rel="noopener"
+                                    ><svg class="ico">
+                                        <use href="#i-map" />
+                                    </svg>
+                                    <span class="txt">Circumetnea</span></a
+                                >
+                            </div>
+                        </li>
+                        <li>
+                            <span class="li-ico"
+                                ><svg class="ico"><use href="#i-bus" /></svg
+                            ></span>
+                            <div>
+                                <h3>Regional coaches · AST</h3>
+                                <p>
+                                    Sicily-wide bus service — useful for day
+                                    trips to Taormina, Siracusa, Noto and other
+                                    towns.
+                                </p>
+                                <a
+                                    class="inline-action"
+                                    href="http://www.astsicilia.it/"
+                                    target="_blank"
+                                    rel="noopener"
+                                    ><svg class="ico">
+                                        <use href="#i-map" />
+                                    </svg>
+                                    <span class="txt">AST Sicilia</span></a
+                                >
+                            </div>
+                        </li>
+                        <li>
+                            <span class="li-ico"
+                                ><svg class="ico"><use href="#i-car" /></svg
+                            ></span>
+                            <div>
+                                <h3>Taxi &amp; ride-hailing</h3>
+                                <p>
+                                    Taxis are available at official ranks across
+                                    the city. The <em>FreeNow</em> and
+                                    <em>itTaxi</em> apps also work in Catania.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="li-ico"
+                                ><svg class="ico"><use href="#i-plane" /></svg
+                            ></span>
+                            <div>
+                                <h3>Airport shuttle · Alibus</h3>
+                                <p>
+                                    The Alibus connects Catania Fontanarossa
+                                    Airport to the city centre, running every 25
+                                    minutes from early morning to late night.
+                                </p>
+                                <a
+                                    class="inline-action"
+                                    href="https://www.amts.ct.it/alibus/"
+                                    target="_blank"
+                                    rel="noopener"
+                                    ><svg class="ico">
+                                        <use href="#i-pin" />
+                                    </svg>
+                                    <span class="txt">Alibus info</span></a
+                                >
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- ====================== THINGS TO DO ====================== -->
+            <section class="screen" id="thingstodo" data-title="Things to do">
+                <div class="page">
+                    <h1 class="page-title center">Things to Do</h1>
+                    <nav class="sec-nav" aria-label="Jump to section">
+                        <button
+                            class="sec-chip is-active"
+                            type="button"
+                            data-scroll-to="ttd-exp"
+                        >
+                            Experiences
+                        </button>
+                        <button
+                            class="sec-chip"
+                            type="button"
+                            data-scroll-to="ttd-see"
+                        >
+                            In the city
+                        </button>
+                        <button
+                            class="sec-chip"
+                            type="button"
+                            data-scroll-to="ttd-visit"
+                        >
+                            By the sea
+                        </button>
+                    </nav>
+                    <div class="ttd-sec" id="ttd-exp">
+                        <h2 class="sub">Experiences</h2>
+                        <div class="stack-cards">
+                            <div class="tcard">
+                                <img
+                                    class="tcard-img"
+                                    src="assets/img/ttd-etna.jpg"
+                                    width="600"
+                                    height="375"
+                                    alt="Mount Etna with steam rising from the summit"
+                                    loading="lazy"
+                                />
+                                <div class="tcard-body">
+                                    <span class="tcard-cat"
+                                        >Volcano · day hike or jeep tour</span
+                                    >
+                                    <h3>Mount Etna</h3>
+                                    <p>
+                                        The tallest active volcano in Europe —
+                                        drive up to Rifugio Sapienza and
+                                        continue on foot or by cable car. Sunset
+                                        tours and 4×4 excursions are also widely
+                                        available.
+                                    </p>
+                                    <a
+                                        class="inline-action"
+                                        href="https://share.google/56pUZ07svXF0ZX7YS"
+                                        target="_blank"
+                                        rel="noopener"
+                                        ><svg class="ico">
+                                            <use href="#i-pin" />
+                                        </svg>
+                                        <span class="txt">View on map</span></a
+                                    >
+                                </div>
+                            </div>
+                            <div class="tcard">
+                                <img
+                                    class="tcard-img"
+                                    src="assets/img/ttd-taormina.jpg"
+                                    width="600"
+                                    height="375"
+                                    alt="The ancient Greek theatre in Taormina overlooking the sea"
+                                    loading="lazy"
+                                />
+                                <div class="tcard-body">
+                                    <span class="tcard-cat"
+                                        >Day trip · clifftop town</span
+                                    >
+                                    <h3>Taormina</h3>
+                                    <p>
+                                        A clifftop town facing the sea, famous
+                                        for its ancient Greek theatre, its
+                                        medieval streets and the views over
+                                        Isola Bella and the Etna coastline.
+                                    </p>
+                                    <a
+                                        class="inline-action"
+                                        href="https://share.google/56pUZ07svXF0ZX7YS"
+                                        target="_blank"
+                                        rel="noopener"
+                                        ><svg class="ico">
+                                            <use href="#i-pin" />
+                                        </svg>
+                                        <span class="txt">View on map</span></a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ttd-sec" id="ttd-see">
+                        <h2 class="sub">In the city</h2>
+                        <div class="stack-cards">
+                            <div class="tcard">
+                                <img
+                                    class="tcard-img"
+                                    src="assets/img/ttd-piazzaduomo.jpg"
+                                    width="600"
+                                    height="375"
+                                    alt="Piazza del Duomo in Catania with the elephant fountain"
+                                    loading="lazy"
+                                />
+                                <div class="tcard-body">
+                                    <span class="tcard-cat"
+                                        >Baroque centre · UNESCO</span
+                                    >
+                                    <h3>Piazza del Duomo</h3>
+                                    <p>
+                                        The heart of Catania — the cathedral,
+                                        the Fontana dell'Elefante (<em
+                                            >u Liotru</em
+                                        >) and the lava-stone Baroque buildings
+                                        that earned the city its UNESCO listing.
+                                    </p>
+                                    <a
+                                        class="inline-action"
+                                        href="https://www.google.com/maps/search/?api=1&amp;query=Piazza+del+Duomo+Catania"
+                                        target="_blank"
+                                        rel="noopener"
+                                        ><svg class="ico">
+                                            <use href="#i-pin" />
+                                        </svg>
+                                        <span class="txt">View on map</span></a
+                                    >
+                                </div>
+                            </div>
+                            <div class="tcard">
+                                <img
+                                    class="tcard-img"
+                                    src="assets/img/ttd-pescheria.jpg"
+                                    width="600"
+                                    height="375"
+                                    alt="The fish market La Pescheria with stalls and lively crowd"
+                                    loading="lazy"
+                                />
+                                <div class="tcard-body">
+                                    <span class="tcard-cat"
+                                        >Fish market · street food</span
+                                    >
+                                    <h3>La Pescheria</h3>
+                                    <p>
+                                        Catania's historic fish market, right
+                                        behind Piazza del Duomo — best in the
+                                        morning, with lively stalls, fresh
+                                        seafood and traditional street food.
+                                    </p>
+                                    <a
+                                        class="inline-action"
+                                        href="https://www.google.com/maps/search/?api=1&amp;query=La+Pescheria+Catania"
+                                        target="_blank"
+                                        rel="noopener"
+                                        ><svg class="ico">
+                                            <use href="#i-pin" />
+                                        </svg>
+                                        <span class="txt">View on map</span></a
+                                    >
+                                </div>
+                            </div>
+                            <div class="tcard">
+                                <img
+                                    class="tcard-img"
+                                    src="assets/img/ttd-villabellini.jpg"
+                                    width="600"
+                                    height="375"
+                                    alt="The garden paths and fountains of Villa Bellini"
+                                    loading="lazy"
+                                />
+                                <div class="tcard-body">
+                                    <span class="tcard-cat"
+                                        >Park · city escape</span
+                                    >
+                                    <h3>Villa Bellini</h3>
+                                    <p>
+                                        Catania's main public garden —
+                                        palm-lined avenues, fountains and a
+                                        flower clock, just off the main shopping
+                                        street. A lovely break from the city.
+                                    </p>
+                                    <a
+                                        class="inline-action"
+                                        href="https://share.google/4wHaKZTuvpRLutWkU"
+                                        target="_blank"
+                                        rel="noopener"
+                                        ><svg class="ico">
+                                            <use href="#i-pin" />
+                                        </svg>
+                                        <span class="txt">View on map</span></a
+                                    >
+                                </div>
+                            </div>
+                            <div class="tcard">
+                                <img
+                                    class="tcard-img"
+                                    src="assets/img/ttd-ortobotanico.jpg"
+                                    width="600"
+                                    height="375"
+                                    alt="The Botanical Garden of Catania"
+                                    loading="lazy"
+                                />
+                                <div class="tcard-body">
+                                    <span class="tcard-cat"
+                                        >Botanical garden</span
+                                    >
+                                    <h3>Orto Botanico</h3>
+                                    <p>
+                                        The University of Catania's botanical
+                                        garden — a quiet, shaded oasis with
+                                        Mediterranean and tropical plants, and a
+                                        striking collection of Sicilian
+                                        succulents.
+                                    </p>
+                                    <a
+                                        class="inline-action"
+                                        href="https://www.google.com/search?kgmid=%2Fm%2F0406939&amp;hl=it-IT&amp;q=Orto%20Botanico%20di%20Catania"
+                                        target="_blank"
+                                        rel="noopener"
+                                        ><svg class="ico">
+                                            <use href="#i-pin" />
+                                        </svg>
+                                        <span class="txt">View on map</span></a
+                                    >
+                                </div>
+                            </div>
+                            <div class="tcard">
+                                <img
+                                    class="tcard-img"
+                                    src="assets/img/ttd-santafilomena.jpg"
+                                    width="600"
+                                    height="375"
+                                    alt="Lively dining street in Catania at night"
+                                    loading="lazy"
+                                />
+                                <div class="tcard-body">
+                                    <span class="tcard-cat"
+                                        >Dining streets · nightlife</span
+                                    >
+                                    <h3>
+                                        Via Santa Filomena &amp; Via Gemmellaro
+                                    </h3>
+                                    <p>
+                                        Two adjacent pedestrian streets packed
+                                        with trattorias, wine bars and small
+                                        restaurants — Catania's go-to spot for
+                                        dinner outdoors on a warm evening.
+                                    </p>
+                                    <a
+                                        class="inline-action"
+                                        href="https://share.google/jdswIfXIGBQ7oFr3P"
+                                        target="_blank"
+                                        rel="noopener"
+                                        ><svg class="ico">
+                                            <use href="#i-pin" />
+                                        </svg>
+                                        <span class="txt">View on map</span></a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ttd-sec" id="ttd-visit">
+                        <h2 class="sub">By the sea</h2>
+                        <div class="stack-cards">
+                            <div class="tcard">
+                                <img
+                                    class="tcard-img"
+                                    src="assets/img/ttd-lungomare.jpg"
+                                    width="600"
+                                    height="375"
+                                    alt="The Catania seafront promenade"
+                                    loading="lazy"
+                                />
+                                <div class="tcard-body">
+                                    <span class="tcard-cat"
+                                        >Promenade · evening walk</span
+                                    >
+                                    <h3>Lungomare di Catania</h3>
+                                    <p>
+                                        The seafront promenade — perfect for an
+                                        evening stroll, a coffee with sea views,
+                                        or a sunrise jog. The volcano and the
+                                        sea on the same horizon.
+                                    </p>
+                                    <a
+                                        class="inline-action"
+                                        href="https://share.google/twdnd0UcQP5oWnbEb"
+                                        target="_blank"
+                                        rel="noopener"
+                                        ><svg class="ico">
+                                            <use href="#i-pin" />
+                                        </svg>
+                                        <span class="txt">View on map</span></a
+                                    >
+                                </div>
+                            </div>
+                            <div class="tcard">
+                                <img
+                                    class="tcard-img"
+                                    src="assets/img/ttd-sangiovanni.jpg"
+                                    width="600"
+                                    height="375"
+                                    alt="The little fishing village of San Giovanni Li Cuti"
+                                    loading="lazy"
+                                />
+                                <div class="tcard-body">
+                                    <span class="tcard-cat"
+                                        >Fishing village · black-sand cove</span
+                                    >
+                                    <h3>San Giovanni Li Cuti</h3>
+                                    <p>
+                                        A small fishing borgo right inside the
+                                        city — colourful boats pulled up onto a
+                                        black-sand beach made of solidified
+                                        lava. Surreal at sunset.
+                                    </p>
+                                    <a
+                                        class="inline-action"
+                                        href="https://www.citymapsicilia.it/struttura/il-borgo-di-san-giovanni-li-cuti/"
+                                        target="_blank"
+                                        rel="noopener"
+                                        ><svg class="ico">
+                                            <use href="#i-pin" />
+                                        </svg>
+                                        <span class="txt">More info</span></a
+                                    >
+                                </div>
+                            </div>
+                            <div class="tcard">
+                                <img
+                                    class="tcard-img"
+                                    src="assets/img/ttd-plaja.jpg"
+                                    width="600"
+                                    height="375"
+                                    alt="The sandy beach of La Plaja"
+                                    loading="lazy"
+                                />
+                                <div class="tcard-body">
+                                    <span class="tcard-cat"
+                                        >Sandy beach · family</span
+                                    >
+                                    <h3>La Plaja</h3>
+                                    <p>
+                                        Catania's long stretch of sandy beach
+                                        south of the harbour — gently shelving,
+                                        family-friendly, with public sections
+                                        and many <em>lidi</em> for the full
+                                        beach-club experience.
+                                    </p>
+                                    <a
+                                        class="inline-action"
+                                        href="https://share.google/opZz29w8AiBUYPy1J"
+                                        target="_blank"
+                                        rel="noopener"
+                                        ><svg class="ico">
+                                            <use href="#i-pin" />
+                                        </svg>
+                                        <span class="txt">View on map</span></a
+                                    >
+                                </div>
+                            </div>
+                            <div class="tcard">
+                                <img
+                                    class="tcard-img"
+                                    src="assets/img/ttd-acitrezza.jpg"
+                                    width="600"
+                                    height="375"
+                                    alt="The Cyclops Stacks off the coast of Aci Trezza"
+                                    loading="lazy"
+                                />
+                                <div class="tcard-body">
+                                    <span class="tcard-cat"
+                                        >Coastal village · Cyclops Stacks</span
+                                    >
+                                    <h3>Aci Trezza</h3>
+                                    <p>
+                                        A small fishing town just north of
+                                        Catania, famous for the
+                                        <em>Faraglioni dei Ciclopi</em> — the
+                                        basalt sea stacks said to have been
+                                        hurled by the Cyclops in Homer's
+                                        <em>Odyssey</em>.
+                                    </p>
+                                    <a
+                                        class="inline-action"
+                                        href="https://share.google/bHz6yGMFgOjPkRvmZ"
+                                        target="_blank"
+                                        rel="noopener"
+                                        ><svg class="ico">
+                                            <use href="#i-pin" />
+                                        </svg>
+                                        <span class="txt">View on map</span></a
+                                    >
+                                </div>
+                            </div>
+                            <div class="tcard">
+                                <img
+                                    class="tcard-img"
+                                    src="assets/img/ttd-acicastello.jpg"
+                                    width="600"
+                                    height="375"
+                                    alt="The Norman castle of Aci Castello on a lava cliff"
+                                    loading="lazy"
+                                />
+                                <div class="tcard-body">
+                                    <span class="tcard-cat"
+                                        >Norman castle · lava coast</span
+                                    >
+                                    <h3>Aci Castello</h3>
+                                    <p>
+                                        A Norman castle perched on a lava cliff
+                                        overlooking the Ionian Sea — atmospheric
+                                        ruins, dramatic photo spots and a small
+                                        museum inside.
+                                    </p>
+                                    <a
+                                        class="inline-action"
+                                        href="https://share.google/wQ0Av8RLMJbohc3IC"
+                                        target="_blank"
+                                        rel="noopener"
+                                        ><svg class="ico">
+                                            <use href="#i-pin" />
+                                        </svg>
+                                        <span class="txt">View on map</span></a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ====================== PLACES TO EAT ====================== -->
+            <section class="screen" id="eat" data-title="Places To Eat">
+                <div class="page">
+                    <h1 class="page-title center">Places to Eat</h1>
+                    <p class="lead center">
+                        A few of Stefano's favourites. Tap any spot for
+                        directions.
+                    </p>
+
+                    <h2 class="sub">Lunch &amp; Granita</h2>
+                    <div class="near-list">
+                        <a
+                            class="near-card"
+                            href="https://share.google/RPK2eACoNlHIo60pC"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <span class="near-head"
+                                ><span class="near-ico"
+                                    ><svg class="ico">
+                                        <use href="#i-coffee" /></svg></span
+                                ><span class="near-info"
+                                    ><span class="near-cat"
+                                        >Lunch · ice cream · granita</span
+                                    ><span class="near-name"
+                                        >Stefano's pick</span
+                                    ></span
+                                ></span
+                            >
+                            <span class="near-desc"
+                                >A friendly local spot for a light lunch, an ice
+                                cream or the classic Sicilian granita with
+                                brioche.</span
+                            >
+                            <span class="near-dir"
+                                ><span class="near-dir-l"
+                                    ><svg class="ico">
+                                        <use href="#i-pin" />
+                                    </svg>
+                                    View on map</span
+                                ><svg class="ico"><use href="#i-chevron" /></svg
+                            ></span>
+                        </a>
+                    </div>
+
+                    <h2 class="sub">Dinner</h2>
+                    <div class="near-list">
+                        <a
+                            class="near-card"
+                            href="https://share.google/gmNxnAAbGvJ4oMZel"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <span class="near-head"
+                                ><span class="near-ico"
+                                    ><svg class="ico">
+                                        <use href="#i-fork" /></svg></span
+                                ><span class="near-info"
+                                    ><span class="near-cat"
+                                        >Dinner · Sicilian</span
+                                    ><span class="near-name"
+                                        >Stefano's pick</span
+                                    ></span
+                                ></span
+                            >
+                            <span class="near-desc"
+                                >A go-to for traditional Sicilian dishes — a
+                                reliable evening out.</span
+                            >
+                            <span class="near-dir"
+                                ><span class="near-dir-l"
+                                    ><svg class="ico">
+                                        <use href="#i-pin" />
+                                    </svg>
+                                    View on map</span
+                                ><svg class="ico"><use href="#i-chevron" /></svg
+                            ></span>
+                        </a>
+                        <a
+                            class="near-card"
+                            href="https://share.google/ILKbcXb0aDal8XLOa"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <span class="near-head"
+                                ><span class="near-ico"
+                                    ><svg class="ico">
+                                        <use href="#i-fork" /></svg></span
+                                ><span class="near-info"
+                                    ><span class="near-cat"
+                                        >Dinner · trattoria</span
+                                    ><span class="near-name"
+                                        >Stefano's pick</span
+                                    ></span
+                                ></span
+                            >
+                            <span class="near-desc"
+                                >A welcoming trattoria — the kind of place you
+                                find by chance and remember after the
+                                trip.</span
+                            >
+                            <span class="near-dir"
+                                ><span class="near-dir-l"
+                                    ><svg class="ico">
+                                        <use href="#i-pin" />
+                                    </svg>
+                                    View on map</span
+                                ><svg class="ico"><use href="#i-chevron" /></svg
+                            ></span>
+                        </a>
+                        <a
+                            class="near-card"
+                            href="https://share.google/oAvSWJ8pdAAVOlqOS"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <span class="near-head"
+                                ><span class="near-ico"
+                                    ><svg class="ico">
+                                        <use href="#i-fork" /></svg></span
+                                ><span class="near-info"
+                                    ><span class="near-cat"
+                                        >Dinner · seafood</span
+                                    ><span class="near-name"
+                                        >Stefano's pick</span
+                                    ></span
+                                ></span
+                            >
+                            <span class="near-desc"
+                                >Fresh fish and seafood, the way it's supposed
+                                to be done on this stretch of coast.</span
+                            >
+                            <span class="near-dir"
+                                ><span class="near-dir-l"
+                                    ><svg class="ico">
+                                        <use href="#i-pin" />
+                                    </svg>
+                                    View on map</span
+                                ><svg class="ico"><use href="#i-chevron" /></svg
+                            ></span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ====================== YOUR NEAREST ====================== -->
+            <section class="screen" id="nearest" data-title="Your Nearest">
+                <div class="page">
+                    <h1 class="page-title center">Your Nearest</h1>
+                    <p class="lead center">
+                        The essentials, all within a short distance. Tap a card
+                        for directions.
+                    </p>
+                    <div class="near-list">
+                        <a
+                            class="near-card"
+                            href="https://share.google/RPK2eACoNlHIo60pC"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <span class="near-head">
+                                <span class="near-ico"
+                                    ><svg class="ico">
+                                        <use href="#i-coffee" /></svg
+                                ></span>
+                                <span class="near-info"
+                                    ><span class="near-cat"
+                                        >Coffee · granita</span
+                                    ><span class="near-name"
+                                        >Local coffee shop</span
+                                    ></span
+                                >
+                            </span>
+                            <span class="near-desc"
+                                >Stefano's morning go-to — a quick espresso, a
+                                brioche con granita, or a light lunch round the
+                                corner.</span
+                            >
+                            <span class="near-dir"
+                                ><span class="near-dir-l"
+                                    ><svg class="ico">
+                                        <use href="#i-pin" />
+                                    </svg>
+                                    Get directions</span
+                                ><svg class="ico"><use href="#i-chevron" /></svg
+                            ></span>
+                        </a>
+                        <a
+                            class="near-card"
+                            href="https://share.google/Jzk6SWyC8paKWZv91"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <span class="near-head">
+                                <span class="near-ico"
+                                    ><svg class="ico">
+                                        <use href="#i-cart" /></svg
+                                ></span>
+                                <span class="near-info"
+                                    ><span class="near-cat">Grocery store</span
+                                    ><span class="near-name"
+                                        >Supermarket</span
+                                    ></span
+                                >
+                            </span>
+                            <span class="near-desc"
+                                >The closest supermarket — handy for breakfast
+                                supplies, snacks and basics.</span
+                            >
+                            <span class="near-dir"
+                                ><span class="near-dir-l"
+                                    ><svg class="ico">
+                                        <use href="#i-pin" />
+                                    </svg>
+                                    Get directions</span
+                                ><svg class="ico"><use href="#i-chevron" /></svg
+                            ></span>
+                        </a>
+                        <a
+                            class="near-card"
+                            href="https://share.google/PBzPVBDFFMyAJMNfe"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <span class="near-head">
+                                <span class="near-ico"
+                                    ><svg class="ico">
+                                        <use href="#i-cross" /></svg
+                                ></span>
+                                <span class="near-info"
+                                    ><span class="near-cat">Pharmacy</span
+                                    ><span class="near-name"
+                                        >Nearest pharmacy</span
+                                    ></span
+                                >
+                            </span>
+                            <span class="near-desc"
+                                >The closest pharmacy — Italian pharmacies
+                                usually open at 8:30 AM, close for a long lunch
+                                and reopen until ~8 PM.</span
+                            >
+                            <span class="near-dir"
+                                ><span class="near-dir-l"
+                                    ><svg class="ico">
+                                        <use href="#i-pin" />
+                                    </svg>
+                                    Get directions</span
+                                ><svg class="ico"><use href="#i-chevron" /></svg
+                            ></span>
+                        </a>
+                        <a
+                            class="near-card"
+                            href="https://share.google/gmNxnAAbGvJ4oMZel"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <span class="near-head">
+                                <span class="near-ico"
+                                    ><svg class="ico">
+                                        <use href="#i-fork" /></svg
+                                ></span>
+                                <span class="near-info"
+                                    ><span class="near-cat">Restaurant</span
+                                    ><span class="near-name"
+                                        >Stefano's go-to dinner</span
+                                    ></span
+                                >
+                            </span>
+                            <span class="near-desc"
+                                >A reliable, friendly spot for dinner — close
+                                enough to walk back home easily.</span
+                            >
+                            <span class="near-dir"
+                                ><span class="near-dir-l"
+                                    ><svg class="ico">
+                                        <use href="#i-pin" />
+                                    </svg>
+                                    Get directions</span
+                                ><svg class="ico"><use href="#i-chevron" /></svg
+                            ></span>
+                        </a>
+                        <a
+                            class="near-card"
+                            href="https://share.google/opZz29w8AiBUYPy1J"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <span class="near-head">
+                                <span class="near-ico"
+                                    ><svg class="ico">
+                                        <use href="#i-wave" /></svg
+                                ></span>
+                                <span class="near-info"
+                                    ><span class="near-cat">Sea swim</span
+                                    ><span class="near-name"
+                                        >La Plaja</span
+                                    ></span
+                                >
+                            </span>
+                            <span class="near-desc"
+                                >Catania's long sandy beach — public sections
+                                and many <em>lidi</em> with sunbeds and
+                                umbrellas for hire.</span
+                            >
+                            <span class="near-dir"
+                                ><span class="near-dir-l"
+                                    ><svg class="ico">
+                                        <use href="#i-pin" />
+                                    </svg>
+                                    Get directions</span
+                                ><svg class="ico"><use href="#i-chevron" /></svg
+                            ></span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ====================== BEFORE YOU GO ====================== -->
+            <section class="screen" id="beforeyougo" data-title="Before You Go">
+                <div class="page">
+                    <h1 class="page-title center">Before You Go</h1>
+
+                    <h2 class="sub">When you check out</h2>
+                    <ul class="checklist">
+                        <li>
+                            <span class="cl-ico"
+                                ><svg class="ico"><use href="#i-check" /></svg
+                            ></span>
+                            Switch off all lights and the air conditioning.
+                        </li>
+                        <li>
+                            <span class="cl-ico"
+                                ><svg class="ico"><use href="#i-check" /></svg
+                            ></span>
+                            Make sure all the windows are closed.
+                        </li>
+                        <li>
+                            <span class="cl-ico"
+                                ><svg class="ico"><use href="#i-check" /></svg
+                            ></span>
+                            Leave the keys and the city tax payment on the
+                            kitchen table.
+                        </li>
+                        <li>
+                            <span class="cl-ico"
+                                ><svg class="ico"><use href="#i-check" /></svg
+                            ></span>
+                            Send Stefano a message when you leave, so the
+                            cleaning can be arranged in time.
+                        </li>
+                        <li>
+                            <span class="cl-ico"
+                                ><svg class="ico"><use href="#i-check" /></svg
+                            ></span>
+                            Let Stefano know if any damage occurred.
+                        </li>
+                    </ul>
+
+                    <p class="closing script">
+                        Safe travels — and come back soon!
+                    </p>
+                </div>
+            </section>
+
+            <!-- ====================== FAQ ====================== -->
+            <section class="screen" id="faq" data-title="Q&amp;A">
+                <div class="page">
+                    <h1 class="page-title center">Q&amp;A</h1>
+                    <div class="accordion">
+                        <details>
+                            <summary>
+                                Can I have an early check-in?<svg
+                                    class="ico chev"
+                                >
+                                    <use href="#i-chevron" />
+                                </svg>
+                            </summary>
+                            <p>
+                                We do our best to accommodate early check-in
+                                whenever possible. If the apartment isn't ready
+                                yet, you can usually drop off your luggage and
+                                start exploring the city right away — just send
+                                Stefano a message first.
+                            </p>
+                        </details>
+                        <details>
+                            <summary>
+                                Can I have a late check-out?<svg
+                                    class="ico chev"
+                                >
+                                    <use href="#i-chevron" />
+                                </svg>
+                            </summary>
+                            <p>
+                                Late check-out depends on the next guest's
+                                arrival. Just ask Stefano in advance and we'll
+                                let you know what's possible.
+                            </p>
+                        </details>
+                        <details>
+                            <summary>
+                                Is there Wi-Fi everywhere in the apartment?<svg
+                                    class="ico chev"
+                                >
+                                    <use href="#i-chevron" />
+                                </svg>
+                            </summary>
+                            <p>
+                                Yes — the Wi-Fi covers the whole apartment,
+                                including the bedroom and the terrace area.
+                            </p>
+                        </details>
+                        <details>
+                            <summary>
+                                Is the tap water safe to drink?<svg
+                                    class="ico chev"
+                                >
+                                    <use href="#i-chevron" />
+                                </svg>
+                            </summary>
+                            <p>
+                                Tap water in Catania is technically potable, but
+                                locals usually prefer bottled water for taste.
+                                You'll always find some in the apartment, and
+                                the nearest supermarket has plenty.
+                            </p>
+                        </details>
+                        <details>
+                            <summary>
+                                How do I pay the city tax?<svg class="ico chev">
+                                    <use href="#i-chevron" />
+                                </svg>
+                            </summary>
+                            <p>
+                                The city tax is paid in cash at check-out — just
+                                leave it on the kitchen table together with the
+                                keys. The amount depends on the number of guests
+                                and nights.
+                            </p>
+                        </details>
+                        <details>
+                            <summary>
+                                What's the best way to reach the airport?<svg
+                                    class="ico chev"
+                                >
+                                    <use href="#i-chevron" />
+                                </svg>
+                            </summary>
+                            <p>
+                                The easiest option is the <em>Alibus</em>, which
+                                runs every ~25 minutes between the city centre
+                                and Catania Fontanarossa Airport. A taxi takes
+                                about 15 minutes outside of rush hours.
+                            </p>
+                        </details>
+                        <details>
+                            <summary>
+                                Where is the closest grocery store?<svg
+                                    class="ico chev"
+                                >
+                                    <use href="#i-chevron" />
+                                </svg>
+                            </summary>
+                            <p>
+                                Have a look at the
+                                <a href="#nearest">Your Nearest</a> section —
+                                the closest supermarket and pharmacy are mapped
+                                there.
+                            </p>
+                        </details>
+                        <details>
+                            <summary>
+                                What if the Wi-Fi or AC stops working?<svg
+                                    class="ico chev"
+                                >
+                                    <use href="#i-chevron" />
+                                </svg>
+                            </summary>
+                            <p>
+                                Just send Stefano a message — issues with the
+                                Wi-Fi or the air conditioning are usually fixed
+                                within the same day.
+                            </p>
+                        </details>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ====================== REVIEWS ====================== -->
+            <section class="screen" id="reviews" data-title="Guest Reviews">
+                <div class="page">
+                    <h1 class="page-title center">Guest Reviews</h1>
+                    <img
+                        class="rounded full-img"
+                        src="assets/img/apt-terrace.jpg"
+                        width="1000"
+                        height="666"
+                        alt="The terrace at golden hour"
+                        loading="lazy"
+                    />
+                    <div class="review">
+                        <span class="score"
+                            ><svg class="ico ico--fill">
+                                <use href="#i-star" />
+                            </svg>
+                            9/10</span
+                        >
+                        <p>
+                            "Great location for exploring Catania on foot — we
+                            walked to the Duomo and the seafront every day. The
+                            apartment is bright, comfortable and full of
+                            personality. Stefano was always reachable and quick
+                            to reply."
+                        </p>
+                    </div>
+                    <div class="review">
+                        <span class="score"
+                            ><svg class="ico ico--fill">
+                                <use href="#i-star" />
+                            </svg>
+                            9/10</span
+                        >
+                        <p>
+                            "Perfect base for a few days in Sicily. The terrace
+                            was our favourite spot in the evening. Stefano
+                            shared lots of useful tips for restaurants and day
+                            trips — we ended up going to Aci Trezza thanks to
+                            him."
+                        </p>
+                    </div>
+                    <p class="note center">
+                        If you enjoyed your stay, please let us know by leaving
+                        a review on Booking or Airbnb.
+                    </p>
+                    <p class="closing script">Thank you!</p>
+                </div>
+            </section>
         </div>
-        <div class="io-card">
-          <span class="io-ico"><svg class="ico"><use href="#i-depart"/></svg></span>
-          <span class="io-label">Check out</span>
-          <span class="io-when">by</span>
-          <span class="io-time">10:00 AM</span>
-        </div>
-      </div>
-      <ul class="info-list io-details">
-        <li>
-          <span class="li-ico"><svg class="ico"><use href="#i-arrive"/></svg></span>
-          <div>
-            <h3>Self check-in</h3>
-            <p>Please find the instructions to access Your Apartment below.</p>
-            <ul class="checklist io-checklist">
-              <li><span class="cl-ico"><svg class="ico"><use href="#i-check"/></svg></span> Send me a message on WhatsApp to inform me about your arrival; I will open the main door as soon as I receive it.</li>
-              <li><span class="cl-ico"><svg class="ico"><use href="#i-check"/></svg></span> Take the elevator to reach the apartment (6th floor).</li>
-              <li><span class="cl-ico"><svg class="ico"><use href="#i-check"/></svg></span> The apartment is located on the right of the elevator.</li>
-              <li><span class="cl-ico"><svg class="ico"><use href="#i-check"/></svg></span> Close to the white cabinet you'll find a key box.</li>
-            </ul>
-            <ul class="checklist io-checklist">
-              <li><span class="cl-ico"><svg class="ico"><use href="#i-key"/></svg></span> Apartment N.1 · key box code <b>1982</b></li>
-            </ul>
-            <p>Please note: you'll also have a special key (the smallest one) for the elevator, included with your set.</p>
-          </div>
-        </li>
-        <li>
-          <span class="li-ico"><svg class="ico"><use href="#i-depart"/></svg></span>
-          <div>
-            <h3>On departure</h3>
-            <p>Before leaving the apartment, please:</p>
-            <ul class="checklist io-checklist">
-              <li><span class="cl-ico"><svg class="ico"><use href="#i-check"/></svg></span> Switch off all lights and air conditioners</li>
-              <li><span class="cl-ico"><svg class="ico"><use href="#i-check"/></svg></span> Make sure all windows are closed</li>
-              <li><span class="cl-ico"><svg class="ico"><use href="#i-check"/></svg></span> Leave keys and city tax payment on the kitchen table</li>
-              <li><span class="cl-ico"><svg class="ico"><use href="#i-check"/></svg></span> Send me a message when you leave, so I can coordinate the cleaning</li>
-            </ul>
-          </div>
-        </li>
-      </ul>
 
-      <h2 class="sub">Good to know</h2>
-      <ol class="tips">
-        <li><span class="num">01</span><p>Catania is a sunny city — bring sunscreen, a hat and water for daytime sightseeing, especially from late spring through early autumn.</p></li>
-        <li><span class="num">02</span><p>Coffee and granita with brioche are the local way to start the morning — don't miss it.</p></li>
-        <li><span class="num">03</span><p>Most shops and small restaurants close in the early afternoon and reopen in the evening — plan lunch around 1:00 PM.</p></li>
-        <li><span class="num">04</span><p>Cash is still handy for small purchases at markets and kiosks, even though cards are widely accepted.</p></li>
-      </ol>
-    </div>
-  </section>
-
-  <!-- ====================== WIFI ====================== -->
-  <section class="screen" id="wifi" data-title="Wifi">
-    <div class="page">
-      <h1 class="page-title center">WiFi</h1>
-      <p class="lead center">Scan to connect — or use the details below.</p>
-      <div class="wifi-qr-card">
-        <div id="wifi-qr" class="wifi-qr" role="img" aria-label="Wi-Fi QR code"></div>
-        <p class="wifi-qr-label">Point your camera here to join</p>
-      </div>
-      <div class="wifi-card">
-        <div class="wifi-row">
-          <span class="wifi-ico"><svg class="ico"><use href="#i-wifi"/></svg></span>
-          <div>
-            <p class="eyebrow">Network name</p>
-            <p class="wifi-value">Wind3 Hub-406D51</p>
-          </div>
-        </div>
-        <div class="hr"></div>
-        <div class="wifi-row">
-          <span class="wifi-ico"><svg class="ico"><use href="#i-key"/></svg></span>
-          <div>
-            <p class="eyebrow">Password</p>
-            <p class="wifi-value" id="wifi-pass">880bmgx8d78cjuip</p>
-          </div>
-          <button class="copy-btn" data-copy="880bmgx8d78cjuip" aria-label="Copy password">
-            <svg class="ico ico-copy"><use href="#i-copy"/></svg>
-            <svg class="ico ico-done"><use href="#i-check"/></svg>
-            <span class="copy-label">Copy</span>
-          </button>
-        </div>
-      </div>
-      <p class="note center">If the Wi-Fi gives you any trouble, just send Stefano a message and we'll sort it out.</p>
-    </div>
-  </section>
-
-  <!-- ====================== HOUSE INFO ====================== -->
-  <section class="screen" id="houseinfo" data-title="House Info">
-    <div class="page">
-      <h1 class="page-title center">House Info</h1>
-      <ul class="info-list">
-        <li><span class="li-ico"><svg class="ico"><use href="#i-park"/></svg></span><div><h3>Parking</h3><p>There's no private parking, but you can park for free on the street. Alternatively, a 24/7 paid parking lot is just 30 metres from the building.</p>
-          <a class="inline-action" href="https://share.google/zgbofdUb3K6da2Ikx" target="_blank" rel="noopener"><svg class="ico"><use href="#i-pin"/></svg> <span class="txt">View the parking lot</span></a></div></li>
-        <li><span class="li-ico"><svg class="ico"><use href="#i-temp"/></svg></span><div><h3>Temperature</h3><p>You'll find dedicated remote controls for the air conditioning, both in the bedroom and in the living area. Please switch them off when leaving the apartment.</p></div></li>
-        <li><span class="li-ico"><svg class="ico"><use href="#i-washer"/></svg></span><div><h3>Laundry service</h3><p>A coin-operated laundromat is just a short walk from the apartment, open 24/7.</p>
-          <a class="inline-action" href="https://share.google/MWvxsWdIHsGeZLfC9" target="_blank" rel="noopener"><svg class="ico"><use href="#i-pin"/></svg> <span class="txt">View the laundromat</span></a></div></li>
-        <li><span class="li-ico"><svg class="ico"><use href="#i-trash"/></svg></span><div><h3>Trash &amp; recycling</h3><p>Please leave the rubbish bags on the street next to the building entrance only during the allowed hours, <b>from 8:00 PM onwards</b>. Separate the waste according to the local collection calendar — help us keep the neighbourhood clean.</p>
-          <a href="assets/img/waste-calendar.jpg" target="_blank" rel="noopener" aria-label="Open the household waste collection calendar"><img class="rounded full-img" src="assets/img/waste-calendar.jpg" width="1049" height="806" alt="GEMA household waste collection calendar — Lotto Centro, Catania" loading="lazy"></a>
-          <a class="inline-action" href="https://www.gema-spa.com/wp-content/uploads/2025/02/Calendario_UTENZE_DOMESTICHE_UD_-italiano.pdf" target="_blank" rel="noopener"><svg class="ico"><use href="#i-rules"/></svg> <span class="txt">Download the official PDF</span></a></div></li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ====================== KITCHEN ====================== -->
-  <section class="screen" id="kitchen" data-title="Kitchen &amp; Other Areas">
-    <div class="page">
-      <h1 class="page-title center">Kitchen <span class="amp">&amp;</span> Other Areas</h1>
-      <img class="rounded full-img" src="assets/img/apt-kitchen.jpg" width="1100" height="733" alt="Modern kitchen with induction hob, oven and the signature red fridge" loading="lazy">
-      <p class="lead">Make yourself completely at home.</p>
-      <p>The kitchen is fully equipped for everything from a quick breakfast to a proper dinner — help yourself to whatever you need.</p>
-
-      <h2 class="sub">In the kitchen</h2>
-      <ul class="amenity-grid">
-        <li><span class="ck"><svg class="ico"><use href="#i-check"/></svg></span> Induction hob &amp; oven</li>
-        <li><span class="ck"><svg class="ico"><use href="#i-check"/></svg></span> Full-size fridge</li>
-        <li><span class="ck"><svg class="ico"><use href="#i-check"/></svg></span> Coffee maker</li>
-        <li><span class="ck"><svg class="ico"><use href="#i-check"/></svg></span> Kettle &amp; toaster</li>
-      </ul>
-
-      <h2 class="sub">Coffee &amp; tea</h2>
-      <p>A coffee maker is ready to go, and we keep tea, coffee and sugar stocked for you — start your morning just the way you like it.</p>
-
-      <a class="cta" href="https://wa.me/393928358558" target="_blank" rel="noopener"><svg class="ico"><use href="#i-phone"/></svg> Send a message to Stefano</a>
-    </div>
-  </section>
-
-  <!-- ====================== HOUSE RULES ====================== -->
-  <section class="screen" id="rules" data-title="House Rules">
-    <div class="page">
-      <h1 class="page-title center">House Rules</h1>
-      <div class="duo">
-        <img class="rounded" src="assets/img/apt-living.jpg" width="1100" height="733" alt="Living room with red accents" loading="lazy">
-        <img class="rounded" src="assets/img/apt-terrace.jpg" width="820" height="1230" alt="Rooftop terrace" loading="lazy">
-      </div>
-      <ul class="rules">
-        <li>No loud noise after 10:00 PM</li>
-        <li>No parties or events</li>
-        <li>No smoking inside the apartment</li>
-        <li>No pets allowed</li>
-        <li>Turn off the AC and lights when you go out</li>
-        <li>Please don't rearrange the furniture</li>
-        <li>Respect the check-in and check-out times</li>
-        <li>Help us keep the neighbourhood clean — separate the waste</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ====================== EMERGENCY ====================== -->
-  <section class="screen" id="emergency" data-title="Emergency">
-    <div class="page">
-      <h1 class="page-title center">Emergency Info</h1>
-      <a class="emg-hero" href="tel:112">
-        <span class="emg-hero-l">
-          <span class="emg-hero-label">Any emergency · call</span>
-          <span class="emg-hero-num">112</span>
-        </span>
-        <span class="emg-hero-ico"><svg class="ico"><use href="#i-phone"/></svg></span>
-      </a>
-      <div class="emg-list">
-        <div class="emg"><span class="li-ico"><svg class="ico"><use href="#i-cross"/></svg></span><div><h3>Medical Emergency</h3><a class="emg-tel" href="tel:118">118</a><a class="addr" href="https://www.google.com/maps/search/?api=1&amp;query=Ospedale+Garibaldi+Centro+Catania" target="_blank" rel="noopener"><svg class="ico pin"><use href="#i-pin"/></svg> Ospedale Garibaldi Centro, Catania <svg class="ico chev"><use href="#i-chevron"/></svg></a></div></div>
-        <div class="emg"><span class="li-ico"><svg class="ico"><use href="#i-flame"/></svg></span><div><h3>Fire &amp; Rescue</h3><a class="emg-tel" href="tel:115">115</a><a class="addr" href="https://www.google.com/maps/search/?api=1&amp;query=Vigili+del+Fuoco+Catania" target="_blank" rel="noopener"><svg class="ico pin"><use href="#i-pin"/></svg> Vigili del Fuoco, Catania <svg class="ico chev"><use href="#i-chevron"/></svg></a></div></div>
-        <div class="emg"><span class="li-ico"><svg class="ico"><use href="#i-shield"/></svg></span><div><h3>Police</h3><a class="emg-tel" href="tel:113">113</a><a class="addr" href="https://www.google.com/maps/search/?api=1&amp;query=Questura+di+Catania" target="_blank" rel="noopener"><svg class="ico pin"><use href="#i-pin"/></svg> Questura di Catania <svg class="ico chev"><use href="#i-chevron"/></svg></a></div></div>
-        <div class="emg"><span class="li-ico"><svg class="ico"><use href="#i-car"/></svg></span><div><h3>Roadside Assistance · ACI</h3><a class="emg-tel" href="tel:803116">803 116</a><a class="addr" href="https://www.aci.it/i-servizi/soccorso-stradale.html" target="_blank" rel="noopener"><svg class="ico pin"><use href="#i-pin"/></svg> ACI · Soccorso Stradale <svg class="ico chev"><use href="#i-chevron"/></svg></a></div></div>
-      </div>
-      <div class="callout"><span class="li-ico"><svg class="ico"><use href="#i-aid"/></svg></span><div><h3>First aid kit</h3><p>A first-aid and emergency kit is available in each apartment.</p></div></div>
-      <h2 class="sub">Reference</h2>
-      <a href="assets/img/emergency-112.jpg" target="_blank" rel="noopener" aria-label="Open the 112 single emergency number reference poster"><img class="rounded full-img" src="assets/img/emergency-112.jpg" width="1047" height="1503" alt="The Single Emergency Number 112 — Ministry of the Interior reference poster" loading="lazy"></a>
-      <p class="note center">Italy's Single Emergency Number is <b>112</b> — police, fire brigade, ambulance. <a href="https://www.112.gov.it/" target="_blank" rel="noopener">112.gov.it</a></p>
-    </div>
-  </section>
-
-  <!-- ====================== TRANSPORT ====================== -->
-  <section class="screen" id="transport" data-title="Transportation">
-    <div class="page">
-      <h1 class="page-title center">Getting Around</h1>
-      <ul class="info-list">
-        <li>
-          <span class="li-ico"><svg class="ico"><use href="#i-bus"/></svg></span>
-          <div><h3>Nearest bus stop</h3><p>The closest stop is just steps from the building — convenient for reaching the city centre and the seafront.</p>
-            <a class="inline-action" href="https://share.google/v5zBijEth14GaCsme" target="_blank" rel="noopener"><svg class="ico"><use href="#i-pin"/></svg> <span class="txt">View on map</span></a></div>
-        </li>
-        <li>
-          <span class="li-ico"><svg class="ico"><use href="#i-bus"/></svg></span>
-          <div><h3>City buses · AMTS</h3><p>Catania's public bus network. Check routes and schedules online.</p>
-            <a class="inline-action" href="https://www.amts.ct.it/percorsi-e-orari" target="_blank" rel="noopener"><svg class="ico"><use href="#i-map"/></svg> <span class="txt">Routes &amp; timetables</span></a></div>
-        </li>
-        <li>
-          <span class="li-ico"><svg class="ico"><use href="#i-bus"/></svg></span>
-          <div><h3>Circumetnea railway</h3><p>The historic narrow-gauge railway that loops around Mount Etna — a scenic ride through lava fields and small villages.</p>
-            <a class="inline-action" href="https://www.circumetnea.it" target="_blank" rel="noopener"><svg class="ico"><use href="#i-map"/></svg> <span class="txt">Circumetnea</span></a></div>
-        </li>
-        <li>
-          <span class="li-ico"><svg class="ico"><use href="#i-bus"/></svg></span>
-          <div><h3>Regional coaches · AST</h3><p>Sicily-wide bus service — useful for day trips to Taormina, Siracusa, Noto and other towns.</p>
-            <a class="inline-action" href="http://www.astsicilia.it/" target="_blank" rel="noopener"><svg class="ico"><use href="#i-map"/></svg> <span class="txt">AST Sicilia</span></a></div>
-        </li>
-        <li>
-          <span class="li-ico"><svg class="ico"><use href="#i-car"/></svg></span>
-          <div><h3>Taxi &amp; ride-hailing</h3><p>Taxis are available at official ranks across the city. The <em>FreeNow</em> and <em>itTaxi</em> apps also work in Catania.</p></div>
-        </li>
-        <li>
-          <span class="li-ico"><svg class="ico"><use href="#i-plane"/></svg></span>
-          <div><h3>Airport shuttle · Alibus</h3><p>The Alibus connects Catania Fontanarossa Airport to the city centre, running every 25 minutes from early morning to late night.</p>
-            <a class="inline-action" href="https://www.amts.ct.it/alibus/" target="_blank" rel="noopener"><svg class="ico"><use href="#i-pin"/></svg> <span class="txt">Alibus info</span></a></div>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ====================== THINGS TO DO ====================== -->
-  <section class="screen" id="thingstodo" data-title="Things to do">
-    <div class="page">
-      <h1 class="page-title center">Things to Do</h1>
-      <nav class="sec-nav" aria-label="Jump to section">
-        <button class="sec-chip is-active" type="button" data-scroll-to="ttd-exp">Experiences</button>
-        <button class="sec-chip" type="button" data-scroll-to="ttd-see">In the city</button>
-        <button class="sec-chip" type="button" data-scroll-to="ttd-visit">By the sea</button>
-      </nav>
-      <div class="ttd-sec" id="ttd-exp">
-      <h2 class="sub">Experiences</h2>
-      <div class="stack-cards">
-        <div class="tcard">
-          <img class="tcard-img" src="assets/img/ttd-etna.jpg" width="600" height="375" alt="Mount Etna with steam rising from the summit" loading="lazy">
-          <div class="tcard-body">
-            <span class="tcard-cat">Volcano · day hike or jeep tour</span>
-            <h3>Mount Etna</h3>
-            <p>The tallest active volcano in Europe — drive up to Rifugio Sapienza and continue on foot or by cable car. Sunset tours and 4×4 excursions are also widely available.</p>
-            <a class="inline-action" href="https://share.google/56pUZ07svXF0ZX7YS" target="_blank" rel="noopener"><svg class="ico"><use href="#i-pin"/></svg> <span class="txt">View on map</span></a>
-          </div>
-        </div>
-        <div class="tcard">
-          <img class="tcard-img" src="assets/img/ttd-taormina.jpg" width="600" height="375" alt="The ancient Greek theatre in Taormina overlooking the sea" loading="lazy">
-          <div class="tcard-body">
-            <span class="tcard-cat">Day trip · clifftop town</span>
-            <h3>Taormina</h3>
-            <p>A clifftop town facing the sea, famous for its ancient Greek theatre, its medieval streets and the views over Isola Bella and the Etna coastline.</p>
-            <a class="inline-action" href="https://share.google/56pUZ07svXF0ZX7YS" target="_blank" rel="noopener"><svg class="ico"><use href="#i-pin"/></svg> <span class="txt">View on map</span></a>
-          </div>
-        </div>
-      </div>
-
-      </div>
-      <div class="ttd-sec" id="ttd-see">
-      <h2 class="sub">In the city</h2>
-      <div class="stack-cards">
-        <div class="tcard">
-          <img class="tcard-img" src="assets/img/ttd-piazzaduomo.jpg" width="600" height="375" alt="Piazza del Duomo in Catania with the elephant fountain" loading="lazy">
-          <div class="tcard-body">
-            <span class="tcard-cat">Baroque centre · UNESCO</span>
-            <h3>Piazza del Duomo</h3>
-            <p>The heart of Catania — the cathedral, the Fontana dell'Elefante (<em>u Liotru</em>) and the lava-stone Baroque buildings that earned the city its UNESCO listing.</p>
-            <a class="inline-action" href="https://www.google.com/maps/search/?api=1&amp;query=Piazza+del+Duomo+Catania" target="_blank" rel="noopener"><svg class="ico"><use href="#i-pin"/></svg> <span class="txt">View on map</span></a>
-          </div>
-        </div>
-        <div class="tcard">
-          <img class="tcard-img" src="assets/img/ttd-pescheria.jpg" width="600" height="375" alt="The fish market La Pescheria with stalls and lively crowd" loading="lazy">
-          <div class="tcard-body">
-            <span class="tcard-cat">Fish market · street food</span>
-            <h3>La Pescheria</h3>
-            <p>Catania's historic fish market, right behind Piazza del Duomo — best in the morning, with lively stalls, fresh seafood and traditional street food.</p>
-            <a class="inline-action" href="https://www.google.com/maps/search/?api=1&amp;query=La+Pescheria+Catania" target="_blank" rel="noopener"><svg class="ico"><use href="#i-pin"/></svg> <span class="txt">View on map</span></a>
-          </div>
-        </div>
-        <div class="tcard">
-          <img class="tcard-img" src="assets/img/ttd-villabellini.jpg" width="600" height="375" alt="The garden paths and fountains of Villa Bellini" loading="lazy">
-          <div class="tcard-body">
-            <span class="tcard-cat">Park · city escape</span>
-            <h3>Villa Bellini</h3>
-            <p>Catania's main public garden — palm-lined avenues, fountains and a flower clock, just off the main shopping street. A lovely break from the city.</p>
-            <a class="inline-action" href="https://share.google/4wHaKZTuvpRLutWkU" target="_blank" rel="noopener"><svg class="ico"><use href="#i-pin"/></svg> <span class="txt">View on map</span></a>
-          </div>
-        </div>
-        <div class="tcard">
-          <img class="tcard-img" src="assets/img/ttd-ortobotanico.jpg" width="600" height="375" alt="The Botanical Garden of Catania" loading="lazy">
-          <div class="tcard-body">
-            <span class="tcard-cat">Botanical garden</span>
-            <h3>Orto Botanico</h3>
-            <p>The University of Catania's botanical garden — a quiet, shaded oasis with Mediterranean and tropical plants, and a striking collection of Sicilian succulents.</p>
-            <a class="inline-action" href="https://www.google.com/search?kgmid=%2Fm%2F0406939&amp;hl=it-IT&amp;q=Orto%20Botanico%20di%20Catania" target="_blank" rel="noopener"><svg class="ico"><use href="#i-pin"/></svg> <span class="txt">View on map</span></a>
-          </div>
-        </div>
-        <div class="tcard">
-          <img class="tcard-img" src="assets/img/ttd-santafilomena.jpg" width="600" height="375" alt="Lively dining street in Catania at night" loading="lazy">
-          <div class="tcard-body">
-            <span class="tcard-cat">Dining streets · nightlife</span>
-            <h3>Via Santa Filomena &amp; Via Gemmellaro</h3>
-            <p>Two adjacent pedestrian streets packed with trattorias, wine bars and small restaurants — Catania's go-to spot for dinner outdoors on a warm evening.</p>
-            <a class="inline-action" href="https://share.google/jdswIfXIGBQ7oFr3P" target="_blank" rel="noopener"><svg class="ico"><use href="#i-pin"/></svg> <span class="txt">View on map</span></a>
-          </div>
-        </div>
-      </div>
-
-      </div>
-      <div class="ttd-sec" id="ttd-visit">
-      <h2 class="sub">By the sea</h2>
-      <div class="stack-cards">
-        <div class="tcard">
-          <img class="tcard-img" src="assets/img/ttd-lungomare.jpg" width="600" height="375" alt="The Catania seafront promenade" loading="lazy">
-          <div class="tcard-body">
-            <span class="tcard-cat">Promenade · evening walk</span>
-            <h3>Lungomare di Catania</h3>
-            <p>The seafront promenade — perfect for an evening stroll, a coffee with sea views, or a sunrise jog. The volcano and the sea on the same horizon.</p>
-            <a class="inline-action" href="https://share.google/twdnd0UcQP5oWnbEb" target="_blank" rel="noopener"><svg class="ico"><use href="#i-pin"/></svg> <span class="txt">View on map</span></a>
-          </div>
-        </div>
-        <div class="tcard">
-          <img class="tcard-img" src="assets/img/ttd-sangiovanni.jpg" width="600" height="375" alt="The little fishing village of San Giovanni Li Cuti" loading="lazy">
-          <div class="tcard-body">
-            <span class="tcard-cat">Fishing village · black-sand cove</span>
-            <h3>San Giovanni Li Cuti</h3>
-            <p>A small fishing borgo right inside the city — colourful boats pulled up onto a black-sand beach made of solidified lava. Surreal at sunset.</p>
-            <a class="inline-action" href="https://www.citymapsicilia.it/struttura/il-borgo-di-san-giovanni-li-cuti/" target="_blank" rel="noopener"><svg class="ico"><use href="#i-pin"/></svg> <span class="txt">More info</span></a>
-          </div>
-        </div>
-        <div class="tcard">
-          <img class="tcard-img" src="assets/img/ttd-plaja.jpg" width="600" height="375" alt="The sandy beach of La Plaja" loading="lazy">
-          <div class="tcard-body">
-            <span class="tcard-cat">Sandy beach · family</span>
-            <h3>La Plaja</h3>
-            <p>Catania's long stretch of sandy beach south of the harbour — gently shelving, family-friendly, with public sections and many <em>lidi</em> for the full beach-club experience.</p>
-            <a class="inline-action" href="https://share.google/opZz29w8AiBUYPy1J" target="_blank" rel="noopener"><svg class="ico"><use href="#i-pin"/></svg> <span class="txt">View on map</span></a>
-          </div>
-        </div>
-        <div class="tcard">
-          <img class="tcard-img" src="assets/img/ttd-acitrezza.jpg" width="600" height="375" alt="The Cyclops Stacks off the coast of Aci Trezza" loading="lazy">
-          <div class="tcard-body">
-            <span class="tcard-cat">Coastal village · Cyclops Stacks</span>
-            <h3>Aci Trezza</h3>
-            <p>A small fishing town just north of Catania, famous for the <em>Faraglioni dei Ciclopi</em> — the basalt sea stacks said to have been hurled by the Cyclops in Homer's <em>Odyssey</em>.</p>
-            <a class="inline-action" href="https://share.google/bHz6yGMFgOjPkRvmZ" target="_blank" rel="noopener"><svg class="ico"><use href="#i-pin"/></svg> <span class="txt">View on map</span></a>
-          </div>
-        </div>
-        <div class="tcard">
-          <img class="tcard-img" src="assets/img/ttd-acicastello.jpg" width="600" height="375" alt="The Norman castle of Aci Castello on a lava cliff" loading="lazy">
-          <div class="tcard-body">
-            <span class="tcard-cat">Norman castle · lava coast</span>
-            <h3>Aci Castello</h3>
-            <p>A Norman castle perched on a lava cliff overlooking the Ionian Sea — atmospheric ruins, dramatic photo spots and a small museum inside.</p>
-            <a class="inline-action" href="https://share.google/wQ0Av8RLMJbohc3IC" target="_blank" rel="noopener"><svg class="ico"><use href="#i-pin"/></svg> <span class="txt">View on map</span></a>
-          </div>
-        </div>
-      </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ====================== PLACES TO EAT ====================== -->
-  <section class="screen" id="eat" data-title="Places To Eat">
-    <div class="page">
-      <h1 class="page-title center">Places to Eat</h1>
-      <p class="lead center">A few of Stefano's favourites. Tap any spot for directions.</p>
-
-      <h2 class="sub">Lunch &amp; Granita</h2>
-      <div class="near-list">
-        <a class="near-card" href="https://share.google/RPK2eACoNlHIo60pC" target="_blank" rel="noopener">
-          <span class="near-head"><span class="near-ico"><svg class="ico"><use href="#i-coffee"/></svg></span><span class="near-info"><span class="near-cat">Lunch · ice cream · granita</span><span class="near-name">Stefano's pick</span></span></span>
-          <span class="near-desc">A friendly local spot for a light lunch, an ice cream or the classic Sicilian granita with brioche.</span>
-          <span class="near-dir"><span class="near-dir-l"><svg class="ico"><use href="#i-pin"/></svg> View on map</span><svg class="ico"><use href="#i-chevron"/></svg></span>
-        </a>
-      </div>
-
-      <h2 class="sub">Dinner</h2>
-      <div class="near-list">
-        <a class="near-card" href="https://share.google/gmNxnAAbGvJ4oMZel" target="_blank" rel="noopener">
-          <span class="near-head"><span class="near-ico"><svg class="ico"><use href="#i-fork"/></svg></span><span class="near-info"><span class="near-cat">Dinner · Sicilian</span><span class="near-name">Stefano's pick</span></span></span>
-          <span class="near-desc">A go-to for traditional Sicilian dishes — a reliable evening out.</span>
-          <span class="near-dir"><span class="near-dir-l"><svg class="ico"><use href="#i-pin"/></svg> View on map</span><svg class="ico"><use href="#i-chevron"/></svg></span>
-        </a>
-        <a class="near-card" href="https://share.google/ILKbcXb0aDal8XLOa" target="_blank" rel="noopener">
-          <span class="near-head"><span class="near-ico"><svg class="ico"><use href="#i-fork"/></svg></span><span class="near-info"><span class="near-cat">Dinner · trattoria</span><span class="near-name">Stefano's pick</span></span></span>
-          <span class="near-desc">A welcoming trattoria — the kind of place you find by chance and remember after the trip.</span>
-          <span class="near-dir"><span class="near-dir-l"><svg class="ico"><use href="#i-pin"/></svg> View on map</span><svg class="ico"><use href="#i-chevron"/></svg></span>
-        </a>
-        <a class="near-card" href="https://share.google/oAvSWJ8pdAAVOlqOS" target="_blank" rel="noopener">
-          <span class="near-head"><span class="near-ico"><svg class="ico"><use href="#i-fork"/></svg></span><span class="near-info"><span class="near-cat">Dinner · seafood</span><span class="near-name">Stefano's pick</span></span></span>
-          <span class="near-desc">Fresh fish and seafood, the way it's supposed to be done on this stretch of coast.</span>
-          <span class="near-dir"><span class="near-dir-l"><svg class="ico"><use href="#i-pin"/></svg> View on map</span><svg class="ico"><use href="#i-chevron"/></svg></span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ====================== YOUR NEAREST ====================== -->
-  <section class="screen" id="nearest" data-title="Your Nearest">
-    <div class="page">
-      <h1 class="page-title center">Your Nearest</h1>
-      <p class="lead center">The essentials, all within a short distance. Tap a card for directions.</p>
-      <div class="near-list">
-        <a class="near-card" href="https://share.google/RPK2eACoNlHIo60pC" target="_blank" rel="noopener">
-          <span class="near-head">
-            <span class="near-ico"><svg class="ico"><use href="#i-coffee"/></svg></span>
-            <span class="near-info"><span class="near-cat">Coffee · granita</span><span class="near-name">Local coffee shop</span></span>
-          </span>
-          <span class="near-desc">Stefano's morning go-to — a quick espresso, a brioche con granita, or a light lunch round the corner.</span>
-          <span class="near-dir"><span class="near-dir-l"><svg class="ico"><use href="#i-pin"/></svg> Get directions</span><svg class="ico"><use href="#i-chevron"/></svg></span>
-        </a>
-        <a class="near-card" href="https://share.google/Jzk6SWyC8paKWZv91" target="_blank" rel="noopener">
-          <span class="near-head">
-            <span class="near-ico"><svg class="ico"><use href="#i-cart"/></svg></span>
-            <span class="near-info"><span class="near-cat">Grocery store</span><span class="near-name">Supermarket</span></span>
-          </span>
-          <span class="near-desc">The closest supermarket — handy for breakfast supplies, snacks and basics.</span>
-          <span class="near-dir"><span class="near-dir-l"><svg class="ico"><use href="#i-pin"/></svg> Get directions</span><svg class="ico"><use href="#i-chevron"/></svg></span>
-        </a>
-        <a class="near-card" href="https://share.google/PBzPVBDFFMyAJMNfe" target="_blank" rel="noopener">
-          <span class="near-head">
-            <span class="near-ico"><svg class="ico"><use href="#i-cross"/></svg></span>
-            <span class="near-info"><span class="near-cat">Pharmacy</span><span class="near-name">Nearest pharmacy</span></span>
-          </span>
-          <span class="near-desc">The closest pharmacy — Italian pharmacies usually open at 8:30 AM, close for a long lunch and reopen until ~8 PM.</span>
-          <span class="near-dir"><span class="near-dir-l"><svg class="ico"><use href="#i-pin"/></svg> Get directions</span><svg class="ico"><use href="#i-chevron"/></svg></span>
-        </a>
-        <a class="near-card" href="https://share.google/gmNxnAAbGvJ4oMZel" target="_blank" rel="noopener">
-          <span class="near-head">
-            <span class="near-ico"><svg class="ico"><use href="#i-fork"/></svg></span>
-            <span class="near-info"><span class="near-cat">Restaurant</span><span class="near-name">Stefano's go-to dinner</span></span>
-          </span>
-          <span class="near-desc">A reliable, friendly spot for dinner — close enough to walk back home easily.</span>
-          <span class="near-dir"><span class="near-dir-l"><svg class="ico"><use href="#i-pin"/></svg> Get directions</span><svg class="ico"><use href="#i-chevron"/></svg></span>
-        </a>
-        <a class="near-card" href="https://share.google/opZz29w8AiBUYPy1J" target="_blank" rel="noopener">
-          <span class="near-head">
-            <span class="near-ico"><svg class="ico"><use href="#i-wave"/></svg></span>
-            <span class="near-info"><span class="near-cat">Sea swim</span><span class="near-name">La Plaja</span></span>
-          </span>
-          <span class="near-desc">Catania's long sandy beach — public sections and many <em>lidi</em> with sunbeds and umbrellas for hire.</span>
-          <span class="near-dir"><span class="near-dir-l"><svg class="ico"><use href="#i-pin"/></svg> Get directions</span><svg class="ico"><use href="#i-chevron"/></svg></span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ====================== BEFORE YOU GO ====================== -->
-  <section class="screen" id="beforeyougo" data-title="Before You Go">
-    <div class="page">
-      <h1 class="page-title center">Before You Go</h1>
-
-      <h2 class="sub">When you check out</h2>
-      <ul class="checklist">
-        <li><span class="cl-ico"><svg class="ico"><use href="#i-check"/></svg></span> Switch off all lights and the air conditioning.</li>
-        <li><span class="cl-ico"><svg class="ico"><use href="#i-check"/></svg></span> Make sure all the windows are closed.</li>
-        <li><span class="cl-ico"><svg class="ico"><use href="#i-check"/></svg></span> Leave the keys and the city tax payment on the kitchen table.</li>
-        <li><span class="cl-ico"><svg class="ico"><use href="#i-check"/></svg></span> Send Stefano a message when you leave, so the cleaning can be arranged in time.</li>
-        <li><span class="cl-ico"><svg class="ico"><use href="#i-check"/></svg></span> Let Stefano know if any damage occurred.</li>
-      </ul>
-
-      <p class="closing script">Safe travels — and come back soon!</p>
-    </div>
-  </section>
-
-  <!-- ====================== FAQ ====================== -->
-  <section class="screen" id="faq" data-title="Q&amp;A">
-    <div class="page">
-      <h1 class="page-title center">Q&amp;A</h1>
-      <div class="accordion">
-        <details><summary>Can I have an early check-in?<svg class="ico chev"><use href="#i-chevron"/></svg></summary><p>We do our best to accommodate early check-in whenever possible. If the apartment isn't ready yet, you can usually drop off your luggage and start exploring the city right away — just send Stefano a message first.</p></details>
-        <details><summary>Can I have a late check-out?<svg class="ico chev"><use href="#i-chevron"/></svg></summary><p>Late check-out depends on the next guest's arrival. Just ask Stefano in advance and we'll let you know what's possible.</p></details>
-        <details><summary>Is there Wi-Fi everywhere in the apartment?<svg class="ico chev"><use href="#i-chevron"/></svg></summary><p>Yes — the Wi-Fi covers the whole apartment, including the bedroom and the terrace area.</p></details>
-        <details><summary>Is the tap water safe to drink?<svg class="ico chev"><use href="#i-chevron"/></svg></summary><p>Tap water in Catania is technically potable, but locals usually prefer bottled water for taste. You'll always find some in the apartment, and the nearest supermarket has plenty.</p></details>
-        <details><summary>How do I pay the city tax?<svg class="ico chev"><use href="#i-chevron"/></svg></summary><p>The city tax is paid in cash at check-out — just leave it on the kitchen table together with the keys. The amount depends on the number of guests and nights.</p></details>
-        <details><summary>What's the best way to reach the airport?<svg class="ico chev"><use href="#i-chevron"/></svg></summary><p>The easiest option is the <em>Alibus</em>, which runs every ~25 minutes between the city centre and Catania Fontanarossa Airport. A taxi takes about 15 minutes outside of rush hours.</p></details>
-        <details><summary>Where is the closest grocery store?<svg class="ico chev"><use href="#i-chevron"/></svg></summary><p>Have a look at the <a href="#nearest">Your Nearest</a> section — the closest supermarket and pharmacy are mapped there.</p></details>
-        <details><summary>What if the Wi-Fi or AC stops working?<svg class="ico chev"><use href="#i-chevron"/></svg></summary><p>Just send Stefano a message — issues with the Wi-Fi or the air conditioning are usually fixed within the same day.</p></details>
-      </div>
-    </div>
-  </section>
-
-  <!-- ====================== REVIEWS ====================== -->
-  <section class="screen" id="reviews" data-title="Guest Reviews">
-    <div class="page">
-      <h1 class="page-title center">Guest Reviews</h1>
-      <img class="rounded full-img" src="assets/img/apt-terrace.jpg" width="1000" height="666" alt="The terrace at golden hour" loading="lazy">
-      <div class="review">
-        <span class="score"><svg class="ico ico--fill"><use href="#i-star"/></svg> 9/10</span>
-        <p>"Great location for exploring Catania on foot — we walked to the Duomo and the seafront every day. The apartment is bright, comfortable and full of personality. Stefano was always reachable and quick to reply."</p>
-      </div>
-      <div class="review">
-        <span class="score"><svg class="ico ico--fill"><use href="#i-star"/></svg> 9/10</span>
-        <p>"Perfect base for a few days in Sicily. The terrace was our favourite spot in the evening. Stefano shared lots of useful tips for restaurants and day trips — we ended up going to Aci Trezza thanks to him."</p>
-      </div>
-      <p class="note center">If you enjoyed your stay, please let us know by leaving a review on Booking or Airbnb.</p>
-      <p class="closing script">Thank you!</p>
-    </div>
-  </section>
-
-</div>
-
-<script src="assets/js/qrcode.min.js"></script>
-<script src="assets/js/app.js?v=20"></script>
-</body>
+        <script src="assets/js/qrcode.min.js"></script>
+        <script src="assets/js/app.js?v=21"></script>
+    </body>
 </html>
