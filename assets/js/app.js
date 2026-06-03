@@ -46,8 +46,8 @@
     // topbar state is always applied (even when the screen doesn't change)
     topbar.style.display = isHome ? 'none' : 'flex';
     if (!isHome) { tbTitle.textContent = next.getAttribute('data-title') || ''; }
-    document.title = (isHome ? 'Your Apartment Catania Apt 1 · Guest Book'
-                             : (next.getAttribute('data-title') + ' · Your Apartment Catania Apt 1'));
+    document.title = (isHome ? 'Your Apartment Catania · Apt 1'
+                             : (next.getAttribute('data-title') + ' · Your Apartment Catania · Apt 1'));
 
     var active = document.querySelector('.screen.is-active');
     if (active === next) { return; }          // already showing
@@ -200,8 +200,29 @@
       document.documentElement.style.overflow = 'hidden';
     }
     function gCloseModal() {
-      if (gallery.open) { gallery.close(); }
-      document.documentElement.style.overflow = '';
+      if (!gallery.open) { return; }
+      // Esc keystroke triggers dialog's own close event; play exit animation
+      // only when the modal is currently open and not already closing.
+      if (gallery.hasAttribute('data-closing')) { return; }
+      var reduce = window.matchMedia
+        && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (reduce) {
+        gallery.close();
+        document.documentElement.style.overflow = '';
+        return;
+      }
+      gallery.setAttribute('data-closing', '');
+      var onDone = function () {
+        gallery.removeEventListener('animationend', onDone);
+        gallery.removeAttribute('data-closing');
+        gallery.close();
+        document.documentElement.style.overflow = '';
+      };
+      gallery.addEventListener('animationend', onDone);
+      // Safety net in case animationend never fires
+      setTimeout(function () {
+        if (gallery.hasAttribute('data-closing')) { onDone(); }
+      }, 360);
     }
 
     document.addEventListener('click', function (e) {
@@ -215,8 +236,14 @@
     gallery.addEventListener('click', function (e) {
       if (e.target === gallery) { gCloseModal(); }
     });
+    // Esc dispatches `cancel` on dialogs — intercept so we can play the exit
+    gallery.addEventListener('cancel', function (e) {
+      e.preventDefault();
+      gCloseModal();
+    });
     gallery.addEventListener('close', function () {
       document.documentElement.style.overflow = '';
+      gallery.removeAttribute('data-closing');
     });
     if (gList) { gList.addEventListener('scroll', gSpy, { passive: true }); }
   }
