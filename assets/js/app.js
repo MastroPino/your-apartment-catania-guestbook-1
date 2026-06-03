@@ -166,7 +166,7 @@
     if (s.querySelector('.brand-footer')) { return; }
     var bf = document.createElement('footer');
     bf.className = 'brand-footer';
-    bf.innerHTML = '<img class="brand-logo" src="assets/img/logo-dark.png" alt="Your Apartment Catania" width="432" height="318">';
+    bf.innerHTML = '<img class="brand-logo" src="assets/img/logo-dark.png" alt="Your Apartment Catania" width="432" height="313">';
     s.appendChild(bf);
   });
 
