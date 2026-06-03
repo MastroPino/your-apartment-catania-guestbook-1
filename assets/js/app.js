@@ -154,7 +154,7 @@
     if (!page || page.querySelector('.cta-host-msg')) { return; }
     var cta = document.createElement('a');
     cta.className = 'cta cta-host-msg';
-    cta.href = 'https://wa.me/390000000000';
+    cta.href = 'https://wa.me/393928358558';
     cta.target = '_blank';
     cta.rel = 'noopener';
     cta.innerHTML = '<svg class="ico"><use href="#i-phone"></use></svg> Send a message to Stefano';
