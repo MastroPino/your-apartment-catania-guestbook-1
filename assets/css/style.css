@@ -396,7 +396,10 @@ em {
     gap: 8px;
     flex: 1 1 0; /* basis 0 so the collage doesn't push the hero past 90dvh — it only grows into the remaining space */
     min-height: 220px;
-    margin-bottom: 48px; /* generous breathing room before "Enjoy your stay" */
+    /* Breathing room before "Enjoy your stay" — scales with viewport height
+       so it stays generous on tall phones / tablets and never collapses
+       below ~48px on shorter screens. */
+    margin-bottom: clamp(48px, 8dvh, 96px);
 }
 .collage img {
     width: 100%;
