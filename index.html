@@ -78,7 +78,13 @@
             href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Poppins:wght@300;400;500;600&family=Sacramento&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="assets/css/style.css?v=32" />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+            integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+            crossorigin=""
+        />
+        <link rel="stylesheet" href="assets/css/style.css?v=33" />
     </head>
     <body>
         <!-- ============ SVG ICON SPRITE ============ -->
@@ -436,7 +442,7 @@
                             class="tall"
                             src="assets/img/gallery/apt-05.jpg"
                             width="1600"
-                            height="1024"
+                            height="1196"
                             alt="Rooftop terrace with a pergola, wicker armchairs and a view over the city"
                         />
                         <img
@@ -574,6 +580,56 @@
                             <svg class="ico"><use href="#i-chevron" /></svg
                         ></span>
                     </a>
+                </section>
+
+                <section class="map-block">
+                    <p class="section-eyebrow">Find us</p>
+                    <a
+                        class="map-card"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Via+Caronda+283+95128+Catania+Italy"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Open Via Caronda 283 in your maps app"
+                        data-map-link
+                        data-apple-href="https://maps.apple.com/?q=Via+Caronda+283&amp;address=Via+Caronda+283,+95128+Catania,+Italy"
+                        data-google-href="https://www.google.com/maps/search/?api=1&amp;query=Via+Caronda+283+95128+Catania+Italy"
+                    >
+                        <div
+                            class="map-card-frame"
+                            id="address-map"
+                            data-lat="37.5212374"
+                            data-lng="15.0840018"
+                            aria-hidden="true"
+                        ></div>
+                        <span class="map-card-overlay">
+                            <span class="map-card-addr"
+                                ><svg class="ico"><use href="#i-pin" /></svg>
+                                Via Caronda 283, Catania</span
+                            >
+                            <span
+                                class="map-card-cta"
+                                aria-hidden="true"
+                                ><svg class="ico"><use href="#i-chevron" /></svg
+                            ></span>
+                        </span>
+                    </a>
+                    <p class="map-attribution">
+                        Map tiles by
+                        <a
+                            href="https://carto.com/attributions"
+                            target="_blank"
+                            rel="noopener"
+                            >CARTO</a
+                        >
+                        ·
+                        <a
+                            href="https://www.openstreetmap.org/copyright"
+                            target="_blank"
+                            rel="noopener"
+                            >© OpenStreetMap</a
+                        >
+                        contributors
+                    </p>
                 </section>
 
                 <footer class="home-footer">
@@ -2390,22 +2446,11 @@
                 <picture class="gallery-item">
                     <source
                         type="image/webp"
-                        srcset="assets/img/gallery/apt-01.webp"
+                        srcset="assets/img/gallery/apt-05.webp"
                     />
                     <img
-                        src="assets/img/gallery/apt-01.jpg"
-                        alt="Apartment photo 1 of 9"
-                        loading="lazy"
-                    />
-                </picture>
-                <picture class="gallery-item">
-                    <source
-                        type="image/webp"
-                        srcset="assets/img/gallery/apt-02.webp"
-                    />
-                    <img
-                        src="assets/img/gallery/apt-02.jpg"
-                        alt="Apartment photo 2 of 9"
+                        src="assets/img/gallery/apt-05.jpg"
+                        alt="Apartment photo 1 of 9 — rooftop terrace"
                         loading="lazy"
                     />
                 </picture>
@@ -2416,7 +2461,7 @@
                     />
                     <img
                         src="assets/img/gallery/apt-03.jpg"
-                        alt="Apartment photo 3 of 9"
+                        alt="Apartment photo 2 of 9 — open-plan living and kitchen"
                         loading="lazy"
                     />
                 </picture>
@@ -2427,29 +2472,7 @@
                     />
                     <img
                         src="assets/img/gallery/apt-04.jpg"
-                        alt="Apartment photo 4 of 9"
-                        loading="lazy"
-                    />
-                </picture>
-                <picture class="gallery-item">
-                    <source
-                        type="image/webp"
-                        srcset="assets/img/gallery/apt-05.webp"
-                    />
-                    <img
-                        src="assets/img/gallery/apt-05.jpg"
-                        alt="Apartment photo 5 of 9"
-                        loading="lazy"
-                    />
-                </picture>
-                <picture class="gallery-item">
-                    <source
-                        type="image/webp"
-                        srcset="assets/img/gallery/apt-06.webp"
-                    />
-                    <img
-                        src="assets/img/gallery/apt-06.jpg"
-                        alt="Apartment photo 6 of 9"
+                        alt="Apartment photo 3 of 9 — sitting area with the Havana Club sign"
                         loading="lazy"
                     />
                 </picture>
@@ -2460,7 +2483,18 @@
                     />
                     <img
                         src="assets/img/gallery/apt-07.jpg"
-                        alt="Apartment photo 7 of 9"
+                        alt="Apartment photo 4 of 9 — living and dining area"
+                        loading="lazy"
+                    />
+                </picture>
+                <picture class="gallery-item">
+                    <source
+                        type="image/webp"
+                        srcset="assets/img/gallery/apt-06.webp"
+                    />
+                    <img
+                        src="assets/img/gallery/apt-06.jpg"
+                        alt="Apartment photo 5 of 9 — bedroom with the queen bed"
                         loading="lazy"
                     />
                 </picture>
@@ -2471,7 +2505,7 @@
                     />
                     <img
                         src="assets/img/gallery/apt-08.jpg"
-                        alt="Apartment photo 8 of 9"
+                        alt="Apartment photo 6 of 9 — bedroom with the city-skyline paintings"
                         loading="lazy"
                     />
                 </picture>
@@ -2482,7 +2516,29 @@
                     />
                     <img
                         src="assets/img/gallery/apt-09.jpg"
-                        alt="Apartment photo 9 of 9"
+                        alt="Apartment photo 7 of 9 — bedroom by the window"
+                        loading="lazy"
+                    />
+                </picture>
+                <picture class="gallery-item">
+                    <source
+                        type="image/webp"
+                        srcset="assets/img/gallery/apt-01.webp"
+                    />
+                    <img
+                        src="assets/img/gallery/apt-01.jpg"
+                        alt="Apartment photo 8 of 9 — bathroom"
+                        loading="lazy"
+                    />
+                </picture>
+                <picture class="gallery-item">
+                    <source
+                        type="image/webp"
+                        srcset="assets/img/gallery/apt-02.webp"
+                    />
+                    <img
+                        src="assets/img/gallery/apt-02.jpg"
+                        alt="Apartment photo 9 of 9 — bathroom, wider view"
                         loading="lazy"
                     />
                 </picture>
@@ -2490,6 +2546,12 @@
         </dialog>
 
         <script src="assets/js/qrcode.min.js"></script>
-        <script src="assets/js/app.js?v=23"></script>
+        <script
+            src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""
+            defer
+        ></script>
+        <script src="assets/js/app.js?v=24" defer></script>
     </body>
 </html>
