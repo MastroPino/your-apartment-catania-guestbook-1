@@ -124,13 +124,15 @@
     updateSectionChips();
   }, { passive: true });
 
-  /* ---- Wi-Fi QR code (scan to join) — re-renders if OS toggles dark mode ---- */
+  /* ---- Wi-Fi QR code (scan to join) ---- */
+  /* FORCED-DARK: light mode paused — render the dark palette unconditionally.
+     To restore system theme, swap `var dark = true` back to a matchMedia read
+     and re-attach the change listener. */
   var qrEl = document.getElementById('wifi-qr');
-  var darkMq = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
   function renderWifiQr() {
     if (!qrEl || !window.QRCode) { return; }
     qrEl.innerHTML = '';
-    var dark = darkMq && darkMq.matches;
+    var dark = true; /* FORCED-DARK was: matchMedia('(prefers-color-scheme: dark)').matches */
     new window.QRCode(qrEl, {
       // WIFI:T:<auth>;S:<ssid>;P:<password>;; — scannable by iOS/Android camera
       text: 'WIFI:T:WPA;S:Wind3 Hub-406D51;P:880bmgx8d78cjuip;;',
@@ -142,9 +144,6 @@
     });
   }
   renderWifiQr();
-  if (darkMq && darkMq.addEventListener) {
-    darkMq.addEventListener('change', renderWifiQr);
-  }
 
   /* ---- Universal "Message the host" CTA on section pages ---- */
   var ctaSkip = { home: 1, host: 1, kitchen: 1 };
@@ -267,7 +266,8 @@
     var lat = parseFloat(mapEl.getAttribute('data-lat'));
     var lng = parseFloat(mapEl.getAttribute('data-lng'));
     if (isFinite(lat) && isFinite(lng)) {
-      var isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      /* FORCED-DARK was: window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches */
+      var isDark = true;
       var tileUrl = isDark
         ? 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png'
         : 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png';
