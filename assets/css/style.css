@@ -569,6 +569,12 @@ picture > source {
 .map-card-frame .leaflet-control-attribution {
     display: none; /* we credit CARTO + OSM below the card instead */
 }
+/* Lift the Dark Matter tiles a notch — same recipe as the Malta site:
+   brighter, gentler contrast, slightly more saturated. Scoped to .leaflet-tile
+   so the red marker pin is not affected. */
+.map-card-frame .leaflet-tile {
+    filter: brightness(1.9) contrast(0.88) saturate(1.12);
+}
 /* Custom Apple-Maps-style teardrop pin */
 .map-pin {
     background: transparent !important;
