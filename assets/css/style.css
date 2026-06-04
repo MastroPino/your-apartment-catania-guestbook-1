@@ -380,6 +380,19 @@ em {
     margin: 4px auto 22px;
     line-height: 0;
 }
+/* <picture> wrappers exist only to deliver WebP with a JPG fallback — they
+   should NEVER add a layout box themselves. Each <img> inside them stays the
+   visible element. Targeted overrides below restore block/flex where needed
+   (e.g. .gallery-item, .hero-logo picture).
+   The <source> children must also be removed from the layout — with
+   display: contents on the parent they would otherwise be promoted to grid /
+   flex items themselves and break the surrounding layout. */
+picture {
+    display: contents;
+}
+picture > source {
+    display: none;
+}
 .hero-logo picture,
 .hero-logo img {
     display: block;
