@@ -66,12 +66,9 @@
     --topbar-h: 58px;
 }
 
-/* ===== Dark mode tokens (translucent topbar/sec-nav rules at end) =====
-   FORCED-DARK: light mode paused. To re-enable system theme, change every
-   "@media all" wrapper marked FORCED-DARK back to "@media (prefers-color-scheme: dark)". */
-@media all /* FORCED-DARK */ {
+/* ===== Dark mode tokens (translucent topbar/sec-nav rules at end) ===== */
+@media (prefers-color-scheme: dark) {
     :root {
-        color-scheme: dark;
         /* brand inverts: a warm cream becomes the accent, dark becomes fg */
         --brand-primary: #f1ead9;
         --brand-on-primary: #15110b;
@@ -1855,7 +1852,7 @@ picture > source {
 
 /* ===== Dark mode — overrides for hardcoded colors (kept at end of file
    so they win the cascade against the base .topbar / .sec-nav / body rules) ===== */
-@media all /* FORCED-DARK */ {
+@media (prefers-color-scheme: dark) {
     .topbar {
         background: rgba(21, 17, 11, 0.78);
     }
@@ -1881,7 +1878,7 @@ picture > source {
         text-decoration-color: rgba(255, 255, 255, 0.2);
     }
 }
-@media (min-width: 540px) /* FORCED-DARK */ {
+@media (prefers-color-scheme: dark) and (min-width: 540px) {
     body {
         background: radial-gradient(
             140% 120% at 50% 0%,
@@ -1938,7 +1935,7 @@ button.collage:focus-visible {
     font-size: 0.9rem;
     stroke-width: 1.9;
 }
-@media all /* FORCED-DARK */ {
+@media (prefers-color-scheme: dark) {
     .collage-badge {
         background: rgba(21, 17, 11, 0.92);
         color: var(--ink);
@@ -1980,7 +1977,7 @@ button.collage:focus-visible {
     backdrop-filter: saturate(1.4) blur(14px);
     border-bottom: 1px solid var(--line);
 }
-@media all /* FORCED-DARK */ {
+@media (prefers-color-scheme: dark) {
     .gallery-bar {
         background: rgba(21, 17, 11, 0.94);
     }
