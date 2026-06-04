@@ -6,16 +6,10 @@
             name="viewport"
             content="width=device-width, initial-scale=1, viewport-fit=cover"
         />
-        <meta
-            name="theme-color"
-            content="#fdfbf7"
-            media="(prefers-color-scheme: light)"
-        />
-        <meta
-            name="theme-color"
-            content="#15110b"
-            media="(prefers-color-scheme: dark)"
-        />
+        <!-- FORCED-DARK: light mode paused.
+             Revert by reinstating the two media-scoped theme-color metas and removing color-scheme. -->
+        <meta name="color-scheme" content="dark" />
+        <meta name="theme-color" content="#15110b" />
         <title>Your Apartment Catania · Apt 1</title>
         <meta
             name="description"
@@ -84,7 +78,7 @@
             integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
             crossorigin=""
         />
-        <link rel="stylesheet" href="assets/css/style.css?v=33" />
+        <link rel="stylesheet" href="assets/css/style.css?v=34" />
     </head>
     <body>
         <!-- ============ SVG ICON SPRITE ============ -->
@@ -419,18 +413,15 @@
                 <header class="hero">
                     <p class="eyebrow">Welcome to</p>
                     <h1 class="hero-title hero-logo">
-                        <picture>
-                            <source
-                                media="(prefers-color-scheme: dark)"
-                                srcset="assets/img/logo-dark.png"
-                            />
-                            <img
-                                src="assets/img/logo-light.png"
-                                alt="Your Apartment Catania"
-                                width="432"
-                                height="313"
-                            />
-                        </picture>
+                        <!-- FORCED-DARK: light mode paused.
+                             Revert by restoring the <picture> + <source media="(prefers-color-scheme: dark)">
+                             wrapper around logo-light.png as the fallback. -->
+                        <img
+                            src="assets/img/logo-dark.png"
+                            alt="Your Apartment Catania"
+                            width="432"
+                            height="313"
+                        />
                     </h1>
                     <button
                         type="button"
@@ -2621,6 +2612,6 @@
             crossorigin=""
             defer
         ></script>
-        <script src="assets/js/app.js?v=24" defer></script>
+        <script src="assets/js/app.js?v=25" defer></script>
     </body>
 </html>
