@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Your Apartment Catania">
+    <rect width="64" height="64" rx="14" fill="#15110b"/>
+    <g transform="translate(32 38) scale(0.21) translate(-347 -492)"
+       fill="none"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width="18">
+        <path stroke="#ee2323" d="M 360 462 C 358 452 362 448 364 442 C 366 437 358 432 360 426 M 372 462 C 376 454 372 448 378 442"/>
+        <path stroke="#f1ead9" d="M 215 558 Q 235 552 250 545 Q 268 530 280 518 Q 292 528 305 515 Q 325 490 345 472 Q 360 460 372 467 Q 388 478 405 498 Q 425 525 445 545 Q 460 553 478 558"/>
+    </g>
+</svg>
